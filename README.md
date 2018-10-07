@@ -1,6 +1,6 @@
 # NL2SparQL4NLU
 
-This repository contains data derived from NL2SPARQL data set from Microsoft Research. The data has beed used for the [Language Understanding Systems](http://disi.unitn.it/~riccardi/page7/page13/page13.html) class of University of Trento from 2014.
+This repository  developed by the Signals and Interactive Systems ,University of Trento (Italy) contains data derived from NL2SparQL data set from Microsoft Research.
 
 ## Data Description
 The data is split into training and tests sets following the original split of NL2SparQL dataset. 
