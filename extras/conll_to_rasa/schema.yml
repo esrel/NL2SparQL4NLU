@@ -1,0 +1,267 @@
+# NL2SparQL4NLU Annotation Schema
+
+# Entity Annotation
+# Base Types (OntoNotes 5 NER, from spaCy)
+# wiki: original 4 NER labels: PER, ORG, LOC, MISC
+PERSON:
+  desc: "People, including fictional movie characters"
+  wiki: "PER"
+NORP:
+  desc: "Nationalities or religious or political groups."
+  wiki: "MISC"
+FAC:
+  desc: "Buildings, airports, highways, bridges, etc."
+  wiki: "MISC"
+ORG:
+  desc: "Organizations: companies, agencies, institutions, etc."
+  wiki: "ORG"
+GPE:
+  desc: "Geo-Political Entities: countries, cities, states."
+  wiki: "LOC"
+LOC:
+  desc: "Non-GPE locations, mountain ranges, bodies of water."
+  wiki: "LOC"
+PRODUCT:
+  desc: "Objects, vehicles, foods, etc. (Not services.)"
+  wiki: "MISC"
+EVENT:
+  desc: "Named hurricanes, battles, wars, sports events, etc."
+  wiki: "MISC"
+WORK_OF_ART:
+  desc: "Titles of books, songs, etc."
+  wiki: "MISC"
+LAW:
+  desc: "Named documents made into laws."
+  wiki: "MISC"
+LANGUAGE:
+  desc: "Any named language"
+  wiki: "MISC"
+DATE:
+  desc: "Absolute or relative dates or periods"
+  wiki: "MISC"
+TIME:
+  desc: "Times smaller than a day."
+  wiki: "MISC"
+PERCENT:
+  desc: "Percentage, including ”%“."
+MONEY:
+  desc: "Monetary values, including unit."
+QUANTITY:
+  desc: "Measurements, as of weight or distance."
+ORDINAL:
+  desc: "“first”, “second”, etc."
+CARDINAL:
+  desc: "Numerals that do not fall under another type."
+
+
+# Definition of a movie concept
+# https://github.com/freebase-schema/freebase/wiki/film-film
+def.movie:
+  ne: WORK_OF_ART
+  links:
+    freebase: "film/film"
+    wikidata: "https://www.wikidata.org/wiki/Q11424"
+    dbpedia: "http://dbpedia.org/ontology/Film"
+    schema.org: "https://schema.org/Movie"
+  # actual surface value of an object
+  name:
+    desc: "movie title"
+    type: text
+  # parts of movie object
+  # these cannot be named (i.e. no surface value as NE), but requested or referred to
+  credits:
+    decs: "media: credits in video or web page"
+    type: reference
+  trailer:
+    decs: "media: movie trailer"
+    type: reference
+  page:
+    desc: "media: web page of the movie"
+    type: reference
+  score:
+    desc: "media: movie score music audio"
+    type: reference
+  subtitles:
+    desc: "media: text contents of subtitles"
+    type: reference
+  media:
+    desc: "media: movie video"
+    type: reference
+  poster:
+    desc: "media: movie poster image"
+    type: reference
+  synopsis:
+    desc: "media: contents of short text summary of movie"
+    type: refenence
+  plot:
+    desc: "media: contents of text summary of movie plot"
+    type: reference
+  reviews:
+    desc: "media: contents of reviews"
+    type: reference
+  # NE relational parts (add new, if needed)
+  production_company:
+    ne: ORG
+  character:
+    ne: PERSON
+  actor:
+    ne: PERSON
+  director:
+    ne: PERSON
+  producer:
+    ne: PERSON
+  writer:
+    ne: PERSON
+  crew_member:
+    ne: PERSON
+  # named properties of production of movie object (i.e. have surface value)
+  language:
+    desc: "The language of the content"
+    ne: LANGUAGE
+  release_date:
+    ne: DATE
+  release_region:
+    ne: GPE
+  budget:
+    ne: MONEY
+  revenue:
+    ne: MONEY
+  duration:
+    ne: TIME
+  country:
+    desc: "country of origin"
+    ne: GPE
+  stars:
+    desc: "movie star rating"
+    ne: CARDINAL
+  series_order:
+    desc: "order in series, if any: mainly used for modifiers like 'original' as `mod.series_order:1`"
+    ne: CARDINAL
+  # named properties of contents of movie object (i.e. have surface value)
+  subject:
+    desc: "subject of movie, e.g. zombies"
+    type: text
+  genre:
+    desc: "movie genre, e.g. horror"
+    type: text
+  audience:
+    desc: "An intended audience, i.e. a group for whom something was created."
+    type: text
+  # categorical (as text most, as of now) properties of media
+  format:
+    type: categorical/text
+    values:
+      - tv
+      - short
+      - 3d
+  rating:
+    desc: "official rating category, e.g. mpaa rating"
+    type: categorical/text
+    values:
+      - g
+      - pg
+      - pg-13
+      - r
+      - nc-17
+      - unrated
+  awards:
+    desc: "received awards"
+    type: text
+
+
+def.person:
+  ne: PERSON
+  links:
+    freebase: "/people/person/"
+    wikidata: "https://www.wikidata.org/wiki/Q215627"
+    dbpedia: "http://dbpedia.org/ontology/Person"
+    schema.org: "https://schema.org/Person"
+  name:
+    desc: "name of a person (or character)"
+    type: text
+  refex:
+    desc: "description, as opposed to name; referring expression"
+    type: text
+  date_of_birth:
+    ne: DATE
+  place_of_bith:
+    ne: GPE
+  date_of_death:
+    ne: DATE
+  place_of_death:
+    ne: GPE
+  gender:
+    type: categorical
+    values:
+      - male
+      - female
+
+
+
+# Annotation Labels
+movie.name          : text
+movie.genre         : text
+movie.subject       : text
+movie.audience      : text
+
+movie.language      : movie.language       & LANGUAGE
+movie.release_date  : movie.release_date   & DATE
+movie.release_region: movie.release_region & GPR
+movie.budget        : movie.budget         & MONEY
+movie.revenue       : movie.revenue        & MONEY
+movie.stars         : movie.stars          & CARDINAL
+
+country.name        : movie.country        & GPE
+country.adj         : movie.country        & LANGUAGE | GPE | NORP
+country.capital     : movie.country        & GPE
+
+rating.name         : movie.rating         & text
+
+producer.org        : movie.production_company & ORG
+
+producer.name       : movie.producer  & person.name
+actor.name          : movie.actor     & person.name
+director.name       : movie.director  & person.name
+writer.name         : movie.writer    & person.name
+composer.name       : movie.composer  & person.name
+character.name      : movie.character & person.name
+character.refex     : movie.character & person.refex
+
+# Modifier Annotation
+# - neg: slot negation
+# - alt: slot alternative
+
+# Annotation Notes:
+# - movie.language is used only if it is an explicit reference to LANGUAGE
+#   + 'english' and 'spanish' are annotated as languages, unless reference to England and Spain are explicit
+#   + 'foreign' is annotated as '(mod.movie.language:english=False)', because it is not a LANGUAGE
+# - country.adj is used otherwise
+# - country.name is used to cover: filming location, country of origin
+# - movie.subject is used for country if it is a setting
+
+(alt:movie)
+(ORG)(MISC)
+(mod.role.type:star):
+(director+actor.name):
+(neg:rating.name):
+[latest](date.sort.DESC:movie.release.date)
+[foreign](mod.country.name:us=False)
+(mod.movie.language:english=False):
+
+
+# Intent Annotation
+# Label = act/requested_slot.property
+# Actions:
+# - show
+# - list
+# - find
+# - count
+#
+intents:
+  - show/movie.name
+  - show/movie.revenue
+  - show/movie.budget
+  - show/movie.duration
+  - show/movie.release_date
+  - show/movie.country
+  - show/movie.original_language

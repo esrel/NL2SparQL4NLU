@@ -1,0 +1,84 @@
+## ideas:
+actions:
+  utter_movie_info
+  show_movie_info
+  list_search_results
+
+
+intents:
+  - count.movie
+  - list.movie
+  - name.movie
+  - show.movie
+  - show.movie.trailer
+  - show.movie.reviews
+  - show.movie.synopsis
+  - show.movie.credits
+  - show.movie.media
+
+  - show.person
+  - show.person.image
+  - show.actor
+  - show.director
+  - show.producer
+  - show.crew
+  - show.screenwriter
+  - show.credits
+  - list.actor
+
+  - count.actor
+  - verify
+
+
+entities:
+  # movie frame
+  - movie.name
+  - movie.type
+  - movie.release_date
+  - movie.budget
+  - movie.release_region
+  - movie.language
+  - movie.genre
+  - movie.subject
+
+  - movie.location.filming
+  - movie.location.setting
+  - movie.origin.country.name
+  - movie.origin.country.adj
+  # actor frame
+  - person.name
+  - actor.name
+
+  - director.name
+  - producer.name
+  - character.name
+  - character.relation
+  - character.occupation
+  - mod:actor.type
+  - mod:actor.gender
+
+
+slots:
+  movie.name:
+    type: text
+  movie.genre:
+    type: text
+  movie.subject:
+    type: text
+
+  movie.audience:
+    type: categorical
+    values:
+      - young
+      - teen
+      - adult
+
+  movie.rating:
+    type: categorical
+    values:
+      - g
+      - pg
+      - pg-13
+      - r
+      - nc-17
+      - unrated

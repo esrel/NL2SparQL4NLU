@@ -1,58 +1,73 @@
-## intent:actor
+## intent:show(actor)
 - who plays [luke](character.name) on [star wars new hope](movie.name)
-- show credits for [the godfather](movie.name)
-- who was the main actor in [the exorcist](movie.name)
-- find the female actress from the movie [she 's the man](movie.name)
+- show [credits](act:list) for [the godfather](movie.name)
+- who was the [main](actor.type) actor in [the exorcist](movie.name)
+- find the [female](actor.gender:female) [actress](actor.gender:female) from the movie [she 's the man](movie.name)
 - who played [dory](character.name) on [finding nemo](movie.name)
-- who was the female lead in [resident evil](movie.name)
+- who was the [female](actor.gender:female) [lead](actor.type:star) in [resident evil](movie.name)
 - who played [guido](character.name) in [life is beautiful](movie.name)
-- who was the co-star in [shoot to kill](movie.name)
-- find the guy who plays [charlie](character.name) on [charlie 's angels](movie.name)
-- cast and crew of movie [the campaign](movie.name)
-- cast and crew of [the campaign](movie.name)
+- who was the [co-star](actor.type) in [shoot to kill](movie.name)
+- find the [guy](actor.gender:male) who plays [charlie](character.name) on [charlie 's angels](movie.name)
+
+- [cast and crew](act:list) of [the campaign](movie.name)
 - who plays in the movie [the campaign](movie.name)
-- who starred in [the campaign](movie.name)
-- who were the crew for [the campaign](movie.name)
-- who was the lead man in [taxi driver](movie.name)
-- star of [twilight](movie.name)
-- who stars in [vulgaria](movie.name)
-- what are the names of female actors who played in [lost](movie.name)
-- can i see the set list and cast for [life is beautiful](movie.name)
-- cast and crew of [life is beautiful](movie.name)
-- show cast and crew for the movie [life is beautiful](movie.name)
-- what 's the cast for [life is beautiful](movie.name)
+- who [starred](actor.type:star) in [the campaign](movie.name)
+
+## intent:actor.list
+- [cast and crew](act:list) of movie [the campaign](movie.name)
+- who were [the crew](act:list) for [the campaign](movie.name)
+
+## intent:actor
+- who was the [lead](actor.type:star) [man](actor.gender:male) in [taxi driver](movie.name)
+- [star](actor.type:star) of [twilight](movie.name)
+- who [stars](actor.type:star) in [vulgaria](movie.name)
+- what are the [names](actor.list.name) of [female](actor.gender:female) actors who played in [lost](movie.name)
+- can i see [the set list and cast](actor.list) for [life is beautiful](movie.name)
+- [cast and crew](actor.list) of [life is beautiful](movie.name)
+- show [cast and crew](actor.list) for the movie [life is beautiful](movie.name)
+- what 's [the cast](actor.list) for [life is beautiful](movie.name)
 - who played in [life is beautiful](movie.name)
 - who played in [life is beautiful](movie.name)
 - who was in [life is beautiful](movie.name)
-- who were [roberto benigni](actor.name) 's costars on [life is beautiful](movie.name)
+- who were [roberto benigni](actor.name) 's [costars](actor.type:costar+actor.list) on [life is beautiful](movie.name)
 - i am looking for the actor that played in [pretty women](movie.name)
-- star of [troy](movie.name)
+- [star](actor.type:star) of [troy](movie.name)
 - who played [robin](character.name) in [batman forever](movie.name)
-- find the male actor from [dirty harry](movie.name)
+- find the [male](actor.gender:male) actor from [dirty harry](movie.name)
 - show me the actor of the [ranam](movie.name)
 - [rocky](movie.name) actor
 - what actor played in [the amazing spider man](movie.name)
+
+
+## intent:character
+- who is [chewbakka](character.name)
+
+
+## intent:actor.list
 - who are the actors in [captain america](movie.name)
-- who starred in [captain america](movie.name)
+- who were [the cast members](actor.list) in [the hobbist](movie.name)
+
+## intent:actor HERE
+- who [starred](actor.type:star) in [captain america](movie.name)
 - who was in the movie [captain america](movie.name)
-- who were the cast members in [the hobbist](movie.name)
+
 - show me the actor of the movie [varsham](movie.name)
-- which female actors starred in [hitch](movie.name)
+- which [female](actor.gender:female) actors starred in [hitch](movie.name)
 - can i see the cast and crew for the movie [in july](movie.name)
 - list cast and crew [in july](movie.name)
 - who stars in [in july](movie.name)
 - who stars in [in july](movie.name)
-- roll credits for [top gun](movie.name)
+- roll [credits](actor.list) for [top gun](movie.name)
 - show me the actor of the movie [sirisiri muvva](movie.name)
-- [rocky](movie.name) 2 actor
-- who is [chewbakka](character.name)
-- who stared in [i love lucy](movie.name)
-- [apollo thirteen](movie.name) cast members
-- can you tell me more about the cast and crew of the movie [apollo thirteen](movie.name)
+- [rocky 2](movie.name) actor
+
+- who [stared](actor.type:star) in [i love lucy](movie.name)
+- [apollo thirteen](movie.name) [cast members](actor.list)
+- can you tell me more about [the cast and crew](actor.list) of the movie [apollo thirteen](movie.name)
 - cast and crew for [apollo thirteen](movie.name)
-- castmembers of [apollo thirteen](movie.name)
+- cast members of [apollo thirteen](movie.name)
 - complete cast and crew of [apollo thirteen](movie.name)
-- find for information about the cast of [appolo thirteen](movie.name)
+- find for information about the cast of [apollo thirteen](movie.name)
 - find info on the crew of [apollo thirteen](movie.name)
 - give me more facts about the cast and crew of the movie [apollo thirteen](movie.name)
 - i need to know in detail about the cast and crew of the movie [apollo thirteen](movie.name)
@@ -61,7 +76,7 @@
 - what actors were in [dirty dancing](movie.name)
 - show me the actors in [captain america](movie.name)
 - show me [gilda](movie.name) 's credits
-- i can 't remember the lead guy in [the avengers](movie.name)
+- i ca n't remember the [lead](actor.type) guy in [the avengers](movie.name)
 - show cast list for [the avergers](movie.name)
 - who plays [nemo](character.name) in [finding nemo](movie.name)
 - find cast and crew for the movie [finding nemo](movie.name)
@@ -80,20 +95,20 @@
 - who starred in [dirty dancing](movie.name)
 - who starred in [dirty dancing](movie.name)
 - who were the stars of [dirty dancing](movie.name)
-- who was the male star of [titanic](movie.name)
+- who was the [male](actor.gender:male) star of [titanic](movie.name)
 - who starred in [taxi](movie.name)
 - who played in [the oranges](movie.name)
 - actors for [life is beautiful](movie.name)
-- who are the lead actors in [life is beautiful](movie.name)
-- find the male actor from the movie [born free](movie.name)
+- who are the [lead](actor.type) actors in [life is beautiful](movie.name)
+- find the [male](actor.gender:male) actor from the movie [born free](movie.name)
 - actor from [iron man](movie.name)
 - shows actors in [shoot to kill](movie.name)
 - which actors starred in [hitch](movie.name)
 - who are all of the actors in [hitch](movie.name)
-- who was the lead actor in [hitch](movie.name)
+- who was the [lead](actor.type) actor in [hitch](movie.name)
 - who starred in [dark knight rising](movie.name)
 - who played [nick fury](character.name) in [the avengers](movie.name)
-- who was the lead actor in [the avengers](movie.name)
+- who was the [lead](actor.type) actor in [the avengers](movie.name)
 - what was the cast of [black swan](movie.name)
 - who acted in [black swan](movie.name)
 - who was in [black swan](movie.name)
@@ -120,9 +135,9 @@
 - who was the star in [hitch](movie.name)
 - voice actor for [homer simpson](character.name)
 - who is in the movie [two can play that game](movie.name)
-- actress from [gone with the wind](movie.name)
-- who are the lead actors in this movie
-- show me information on the cast and crew of [pitchperfect](movie.name)
+- [actress](actor.gender:female) from [gone with the wind](movie.name)
+- who are the [lead](actor.type) actors in this movie
+- show me information on the cast and crew of [pitch perfect](movie.name)
 - actors in [house at the end of the street](movie.name)
 - can i see the cast and crew for [house at the end of the street](movie.name)
 - cast and crew for [house at the end of the street](movie.name)
@@ -139,26 +154,26 @@
 - list the actors in [forager](movie.name)
 - cast and crew of [go](movie.name)
 - who starred in [go](movie.name)
-- who was the lead actress in [the hunger games](movie.name)
+- who was the lead [actress](actor.gender:female) in [the hunger games](movie.name)
 - show cast of movie [request](movie.name)
 - what is the cast in [resident evil retribution](movie.name)
 - list me the actors for [top gun](movie.name)
 - who was [the tin man](character.name) in [wizard of oz](movie.name)
-- actress in [hum tum](movie.name)
+- [actress](actor.gender:female) in [hum tum](movie.name)
 - who was the actor in movie [hum tum](movie.name)
 - who is in [barfi](movie.name)
 - who was the lead woman in [the savages](movie.name)
 - actor from [forrest gump](movie.name) [lieutenant dan](character.name)
 - actor who played [stephanie](character.name) in [full house](movie.name)
-- what female played as [number 13](character.name) in the tv show [house](movie.name)
-- what actress starred in [i love lucy](movie.name) as [ethel](character.name)
+- what [female](actor.gender:female) played as [number 13](character.name) in the tv show [house](movie.name)
+- what [actress](actor.gender:female) starred in [i love lucy](movie.name) as [ethel](character.name)
 - who played [beaver](character.name) in [leave it to beaver](movie.name)
 - can you tell me the name of the actor who played [todd](character.name) in the tv show [one life to live](movie.name)
 - give me the name of the tv actor who played [todd](character.name) on [one life to live](movie.name)
 - i need to know the name of the tv actor who played [todd](character.name) on show [one life to live](movie.name)
 - find who guy who was the [red ranger](character.name) in [power rangers](movie.name)
 - who is the guy who played the [red ranger](character.name) in [power rangers](movie.name)
-- actress from [reba](movie.name) who played [kyra](character.name)
+- [actress](actor.gender:female) from [reba](movie.name) who played [kyra](character.name)
 - who plays [luke skywalker](character.name) in [nineteen seventieseven](movie.release_date)
 - show me cast and crew for [star wars](movie.name)
 - list cast in [that 's 70s show](movie.name)
@@ -170,8 +185,8 @@
 - who was [richie 's mother](character.name) in [happy days](movie.name)
 - who was [barty crouch 's son](character.name) in [harry potter](movie.name)
 - who was the [sheriff that had to kill the bad guy](character.name) in [high noon](movie.name)
-- who is the actress who played [lucy 's best friend](character.name) on [i love lucy](movie.name)
-- what actress played [mother](character.name) in [mirror](movie.name) by [tarkovsky](director.name)
+- who is the [actress](actor.gender:female) who played [lucy 's best friend](character.name) on [i love lucy](movie.name)
+- what [actress](actor.gender:female) played [mother](character.name) in [mirror](movie.name) by [tarkovsky](director.name)
 - who played the [little girl](character.name) in [my girl](movie.name)
 - who played [opposite sidney poitier](character.name) in [shoot to kill](movie.name)
 - who played [the mother](character.name) in [steel magnolias](movie.name)
@@ -184,20 +199,20 @@
 
 ## intent:actor_name
 - find the name of the actor who played [jack](character.name) in the movie [titanic](movie.name)
-- the name of the male lead in the movie [titanic](movie.name)
-- what is the name of the lead actor in the [titanic](movie.name)
+- the name of the [male](actor.gender:male) lead in the movie [titanic](movie.name)
+- what is the name of the [lead](actor.type) actor in the [titanic](movie.name)
 - i cannot remember the name of the actor in [pretty women](movie.name)
 - what is the name of the actor who was in [the parent trap](movie.name)
-- find name of main actor in the movie [the help](movie.name)
+- find name of [main](actor.type) actor in the movie [the help](movie.name)
 - looking for names of crew members of [apollo thirteen](movie.name)
-- i can 't figure out the name of the lead guy in [the avengers](movie.name)
+- i ca n't figure out the name of the [lead](actor.type) [guy](actor.gender:male) in [the avengers](movie.name)
 - what were the names of the ladies in [facts of life](movie.name)
 - who was the antogonist in [apollo thirteen](movie.name)
-- what is the name of the [african american](actor.nationality) actress who played in [ghost](movie.name)
+- what is the name of the [african american](actor.nationality) [actress](actor.gender:female) who played in [ghost](movie.name)
 - i would like to know the name of the actor who played [todd](character.name) in the tv show [one life to live](movie.name)
 - name the actor who played [opposite sidney pointier](character.name) in [shoot to kill](movie.name)
 - what was the name of the actor who plays [victor](character.name) on [young and the restless](movie.name)
-- the name of the actress who played [the boy 's mother](character.name) in the [russian](country.name) movie [mirror](movie.name)
+- the name of the [actress](actor.gender:female) who played [the boy 's mother](character.name) in the [russian](country.name) movie [mirror](movie.name)
 - what is the name of the [red ranger guy](character.name) in [power rangers](movie.name)
 - give me the name of [the mom](character.name) on [seinfeld](movie.name)
 - i need to know the name of [the mom](character.name) on [seinfeld](movie.name)
@@ -375,10 +390,10 @@
 - how many movies has he directed
 - how many of the [star wars](movie.name) movies won awards
 
-## intent:producer_count
+## intent:movie.producer.count
 - how many producers did the movie the [hitch](movie.name) have
 
-## intent:country
+## intent:movie.country
 - where was [footnote](movie.name) made
 - what country did [the flowers of war](movie.name) come from
 - country of [le havre](movie.name)
@@ -856,16 +871,20 @@
 - find out the genre for the movie [the businessman](movie.name)
 - what genre
 
-## intent:language
+## intent:movie.language.alternatives
+- what are the different languages this movie come in
+- what foreign language is the movie [belle](movie.name) available to view in
+- what language can i watch the movie [the professional](movie.name)
+
+## intent:movie.language
 - which language is used in the movie
 - language of [sound of music](movie.name)
 - what language is this film
-- what are the different languages this movie come in
 - what foreign language is spoken in movie
 - what language is movie in
 - what language is the movie in
 - what language is the movie in
-- language of [anna karinia](movie.name)
+- language of [anna karenina](movie.name)
 - language of [godzilla](movie.name) movie
 - language of [hamlet](movie.name)
 - can you tell me the language of the movie [hero](movie.name)
@@ -879,9 +898,7 @@
 - what language is [the chaser](movie.name) in
 - look up what language [the chaser](movie.name) is in
 - [ondskan](movie.name) 's language
-- what language is la [havre](movie.name) in
-- what foreign language is the movie [belle](movie.name) available to view in
-- what language can i watch the movie [the professional](movie.name)
+- what language is [le havre](movie.name) in
 - what language is [the professional](movie.name) in
 - how do they speak in the movie [the professional](movie.name)
 - what language is spoken in [indochine](movie.name)
@@ -894,7 +911,7 @@
 - what language is [ju on](movie.name) on
 - what language is the movie [elling](movie.name) in
 - language of [a separation](movie.name)
-- what s the language of [moscow does not believe in tears](movie.name)
+- what 's the language of [moscow does not believe in tears](movie.name)
 - what is the language of the movie [aankhen](movie.name)
 - can you tell me the language of the movie [aankhen](movie.name)
 - what language is [9 women](movie.name) in
@@ -902,28 +919,30 @@
 - what language is [amelie](movie.name) in
 - what tongue did they speak in [black swan](movie.name)
 - what language is spoken in [amelie](movie.name)
-- is the movie [bastardos en el paraiso](movie.name) all in [swedish](movie.language)
 - what language is the [father of my children](movie.name) in
 - language of [my annette](movie.name)
 - what language is spoken in the movie [on a wednesday](movie.name)
 
-## intent:movie_name
+## intent:movie.language.yn
+- is the movie [bastardos en el paraiso](movie.name) all in [swedish](movie.language)
+
+## intent:movie.name
 - what are the names of films produced by [steven spielberg](producer.name)
 - can you tell me names of some movies by director [martin scorsese](director.name)
 - find movie titles
-- what are the names of movies made in the [united states](country.name)
+- what are the names of movies made in the [united states](movie.origin:country.name)
 - i would like to know the names of all the movies which have been directed by [james cameron](director.name)
 - what are the titles of all the movies that [george lucas](producer.name) produced
-- names of [romantic](movie.genre) [indian](movie.language) films
-- can you show me names of some [indian](movie.language) [romantic](movie.genre) movies
-- i would like to know names of some [indian](movie.language) movies
-- [japanese](movie.language) movie titles
+- names of [romantic](movie.genre) [indian](movie.origin) films
+- can you show me names of some [indian](movie.origin) [romantic](movie.genre) movies
+- i would like to know names of some [indian](movie.origin) movies
+- [japanese](movie.origin) movie titles
 - can you give me names of some movies having [pg thirteen](rating.name) rating
 - i would like to get names of some movies with [pg thirteen](rating.name) rating
 - show me names of some [romantic](movie.genre) movies having a [pg thirteen](rating.name) rating
 - what are the names of movies with [zombies](movie.subject) in them
 - i need to know the names of all the movies produced by [william packer](producer.name)
-- name all movies made in [america](country.name)
+- name all movies made in [america](movie.origin:country.name)
 - i need to get names of some [thriller](movie.genre) movies with [pg thirteen](rating.name) rating
 - can you tell me names of some movies by [indian](actor.nationality) actor [dilip kumar](actor.name)
 - show me names of movies in which [indian](actor.nationality) actor [dilip kumar](actor.name) acted
@@ -933,13 +952,17 @@
 - get me the names of movies about [sports figures](movie.subject)
 - i need names of some movies about [gardening](movie.subject)
 
+
+## yn
+- was [kevin bacon](actor.name) in [apollo thirteen](movie.name)
+
+
 ## intent:movie
 - [stephen king](director.name) directed what movie
 - what movies did [stephen king](director.name) direct
-- watch the last [james cameron](director.name) movie
+- watch the [last](order) [james cameron](director.name) movie
 - [richard lester](producer.name) produced what other movies
 - show me [westerns](movie.genre)
-- was [kevin bacon](actor.name) in [apollo thirteen](movie.name)
 - i need movie information for [life is beautiful](movie.name)
 - [life is beautiful](movie.name) movie page
 - i want to know more about the movie [life is beautiful](movie.name)
@@ -965,16 +988,16 @@
 - [will ferrell](actor.name) films
 - [will ferrell](actor.name) movies
 - [will ferrell](actor.name) movies
-- [will ferell](actor.name) videos
+- [will ferrell](actor.name) videos
 - i want to see videos of [will ferrell](actor.name)
 - all videos of [will ferrell](actor.name)
 - can you find me movies in [russian](movie.language)
 - where can i find movies in [russian](movie.language)
-- find [russian](movie.language) movies
-- find [russian](movie.language) movies
-- search for [russian](movie.language) movies
+- find [russian](movie.origin.language) movies
+- find [russian](movie.origin.language) movies
+- search for [russian](movie.origin.language) movies
 - show me movies from [poland](country.name)
-- i would like to see a [polish language](movie.language) film
+- i would like to see a [polish](movie.language) language film
 - i am interested in watching a movie in [polish](movie.language)
 - i want to see a [polish](movie.language) movie
 - list some [funny](movie.genre) [russian](movie.language) movies
@@ -982,13 +1005,13 @@
 - list of [barry sonnenfeld](director.name) films
 - find [martin scorsese](director.name) films
 - i want to see a movie which was directed by [scorsese](director.name)
-- show all movies directed by [martin scorcese](director.name)
+- show all movies directed by [martin scorsese](director.name)
 - movies with [meg ryan](actor.name)
 - i want to watch movies directed by [jackie chan](director.name)
 - [star wars](movie.name)
 - what are the plots of [hotel rwanda](movie.name)
 - [tim burton](director.name) movies
-- bings movie page [finding nemo](movie.name)
+- [bing](org) 's movie page [finding nemo](movie.name)
 - display information for film [finding nemo](movie.name)
 - [finding nemo](movie.name) movie shortcut
 - whats some details for the movie [finding nemo](movie.name)
@@ -1003,19 +1026,23 @@
 - what did [lee unkrich](director.name) direct
 - i would like to see a movie with [albert brooks](actor.name) in it
 - find me films produced by [drew barrymore](producer.name)
-- what movies that [clint eastwood](director.name) starred in did he also direct
-- what movies did [clint eastwood](director.name) direct and star in
+- what movies that [clint eastwood](director.name+actor.name) starred in did he also direct
+- what movies did [clint eastwood](director.name+actor.name) direct and star in
 - i want to watch a movie by [sergio leone](director.name)
 - show [sergio leone](director.name) 's movies
 - show me movies directed by [sergio leone](director.name)
 - movies that have been directed by [tony scott](director.name)
-- show me movies from [brazil](country.name)
+- show me movies from [brazil](movie.origin+country.name)
 - movies with [harrison ford](actor.name)
 - show me only movies with [harrison ford](actor.name)
+
+## intent:movie.name 
 - name the movies [clive owen](actor.name) has been in
+
+## intent:movie
 - what movies has [clive owen](actor.name) been in
 - what movies has [clive owen](actor.name) starred in
-- find [ms. congeniality](movie.name)
+- find [ms congeniality](movie.name)
 - find [spike lee](director.name) directed movies
 - what movies did [spike lee](director.name) direct
 - movies [cecil b demille](director.name)
@@ -1026,75 +1053,75 @@
 - in search for movies
 - looking for movies
 - find a movie
-- are there movies not rated [g](rating.name)
-- i don 't want any [g](rating.name) rated movies
+- are there movies [not](negation.rating.name) rated [g](rating.name)
+- i do [n't](negation.rating.name) want any [g](rating.name) rated movies
 - can you find some [drama](movie.genre) movies
 - i 'd like to watch something with [drama](movie.genre)
 - looking for a [drama](movie.genre) movie
 - show me a list of movies in [english](movie.language)
-- show me [english](movie.language) movies
-- find [english](movie.language) movies
+- show me [english](movie.language.origin) movies
+- find [english](movie.language.origin) movies
 - can i get a list of movies available in [english](movie.language)
 - show me movies in [english](movie.language)
 - i would like to see movies in [english](movie.language)
 - movies in [english](movie.language)
-- show me a list of all movies made in [the united states](country.name)
-- what are all movies made by [united states](country.name)
-- what movies have been made in [the united states](country.name)
-- movies from [the us](country.name)
-- what are all of the movies made in [usa](country.name)
-- i want to see movies made in [america](country.name)
-- show me a list of movies made in [america](country.name)
-- show me movies made in [america](country.name)
-- please tell me if you have any movies from [the united states](country.name)
-- movies from [the us](country.name)
-- please tell me about movies from [the usa](country.name)
-- [english](movie.language) movie list
-- show me [thrillers](movie.genre)
-- show me [thrillers](movie.genre)
-- show me [comedies](movie.genre)
-- looking for a [comedy](movie.genre) movie
-- see [comedy](movie.genre)
-- show me [comedy](movie.genre) movies
-- show me [funny](movie.genre) movies
-- movies that have [comedy](movie.genre)
-- can you show me a list of [scary](movie.genre) movies
-- i am in the mood for a [horror](movie.genre) film
-- looking for a [horror](movie.genre) movie
-- search for [horror](movie.genre) movies
-- show me [horror](movie.genre) movies
-- show only [horror](movie.genre) movies
-- show me a list of [scary](movie.genre) movies
-- i want to see a list of [scary](movie.genre) movies
-- funny [scary](movie.genre) movies
+- show me a list of all movies made in [the united states](movie.origing+country.name)
+- what are all movies made by [united states](movie.origin+country.name)
+- what movies have been made in [the united states](movie.origin+country.name)
+- movies from [the us](movie.origin+country.name)
+- what are all of the movies made in [usa](movie.origin+country.name)
+- i want to see movies made in [america](movie.origin+country.name)
+- show me a list of movies made in [america](movie.origin+country.name)
+- show me movies made in [america](movie.origin+country.name)
+- please tell me if you have any movies from [the united states](movie.origin+country.name)
+- movies from [the us](movie.origin+country.name)
+- please tell me about movies from [the usa](movie.origin+country.name)
+- [english](movie.language.origin) movie list
+- show me [thrillers](movie.genre:thriller)
+- show me [thrillers](movie.genre:thriller)
+- show me [comedies](movie.genre:comedy)
+- looking for a [comedy](movie.genre:comedy) movie
+- see [comedy](movie.genre:comedy)
+- show me [comedy](movie.genre:comedy) movies
+- show me [funny](movie.genre:comedy) movies
+- movies that have [comedy](movie.genre:comedy)
+- can you show me a list of [scary](movie.genre:horror) movies
+- i am in the mood for a [horror](movie.genre:horror) film
+- looking for a [horror](movie.genre:horror) movie
+- search for [horror](movie.genre:horror) movies
+- show me [horror](movie.genre:horror) movies
+- show only [horror](movie.genre:horror) movies
+- show me a list of [scary](movie.genre:horror) movies
+- i want to see a list of [scary](movie.genre:horror) movies
+- [funny](movie.genre:comedy) [scary](movie.genre:horror) movies
 - movies with [bruce willis](actor.name)
 - [clint eastwood](actor.name) movies
-- find movies from [canada](country.name)
-- get me [canadian](country.name) movies
-- show me movies from [canada](country.name)
-- look up information about [canadian](country.name) movies
-- get movies from [canada](country.name)
-- show me a list of any movies made in [canada](country.name)
-- find movies filmed in [canada](country.name)
-- get films made in [canada](country.name)
-- show me [canadian](country.name) films
-- show me [canadian](country.name) movies
-- are there any [canadian](country.name) movies
-- are there any [canadian](country.name) movies
-- find [canadian](country.name) films
-- what are some movies made [outside the us](country.name)
-- movies from [germany](country.name)
-- i want to watch movies from [germany](country.name)
-- display movies made in [germany](country.name)
-- find movies done in [germany](country.name)
-- what movies do you have that were made in [italy](country.name)
-- movies from [italy](country.name)
-- does [italy](country.name) make any movies
-- find [italian](country.name) movies
-- [italian](country.name) films
-- [italian](country.name) movies
-- show me [italian](country.name) movies
-- get all [italian language](movie.language) movies
+- find movies from [canada](movie.origin+country.name)
+- get me [canadian](movie.origin+country.adj) movies
+- show me movies from [canada](movie.origin+country.name)
+- look up information about [canadian](movie.origin+country.adj) movies
+- get movies from [canada](movie.origin+country.name)
+- show me a list of any movies made in [canada](movie.origin+country.name)
+- find movies filmed in [canada](movie.origin+country.name)
+- get films made in [canada](movie.origin+country.name)
+- show me [canadian](movie.origin+country.name) films
+- show me [canadian](movie.origin+country.name) movies
+- are there any [canadian](movie.origin+country.adj) movies
+- are there any [canadian](movie.origin+country.adj) movies
+- find [canadian](movie.origin+country.adj) films
+- what are some movies made [outside](negation.movie.origin) [the us](movie.origin+country.name)
+- movies from [germany](movie.origin+country.name)
+- i want to watch movies from [germany](movie.origin+country.name)
+- display movies made in [germany](movie.origin+country.name)
+- find movies done in [germany](movie.origin+country.name)
+- what movies do you have that were made in [italy](movie.origin+country.name)
+- movies from [italy](movie.origin+country.name)
+- does [italy](movie.origin+country.name) make any movies
+- find [italian](movie.origin+country.adj) movies
+- [italian](country.adj) films
+- [italian](country.adj) movies
+- show me [italian](movie.origin.language) movies
+- get all [italian](movie.language+country.adj) language movies
 - send me movies that are in [italian](movie.language)
 - movies with [italian language](movie.language)
 - show me movies in [italian](movie.language)
@@ -2437,7 +2464,7 @@
 - can you tell me some famous movies by producer [walt disney](producer.name)
 - what are some good [g](rating.name) rated movies
 - [jennifer lawrence](actor.name) [new](movie.release_date) movie
-- show [brad pitt](actor.name) movies with [angelina jolie](actor.name) as actress
+- show [brad pitt](actor.name) movies with [angelina jolie](actor.name) as [actress](actor.gender:female)
 - i would like to know the names of some award winning movies by [indian](actor.nationality) actor [dilip kumar](actor.name)
 - show me [kristen stewart](actor.name) 's worst movies
 - show [brad pitt](actor.name) movies nominated for [oscars](award.ceremony)
@@ -3098,7 +3125,7 @@
 - bing [star wars four](movie.name)
 - rating
 - why is rated [g](rating.name)
-- bald male actors
+- bald [male](actor.gender:male) actors
 - can i see a list of movie genres
 - did [hotel transylvania](movie.name) break any records
 - did you enjoy voice acting for the movie [kung fo panda](movie.name)

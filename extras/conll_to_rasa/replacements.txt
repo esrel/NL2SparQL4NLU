@@ -1,0 +1,38 @@
+(mod.actor.gender:female)
+- female
+- woman
+- actress
+
+(mod.actor.gender:male)
+- male
+- man
+- guy
+
+(mod.actor.type:star)
+- star.VERB
+- star.NOUN
+- co-star.VERB
+- co-star.NOUN
+- costar.VERB
+- costar.NOUN
+
+
+(mod.actor.type:lead)
+- main
+- best
+- lead
+
+
+[top](mod.star_rating:sort_asc)
+[voices](mod.character.attr)
+[main](mod:lead)
+[tv](media.type)
+[show](movie.type)
+
+
+- removed puncts
+- can't -> can n't
+
+
+movie.origin.country.adj
+movie.origin.country.name

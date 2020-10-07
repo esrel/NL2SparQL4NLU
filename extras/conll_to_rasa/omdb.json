@@ -1,0 +1,42 @@
+[{
+  "Title":"Dredd",
+  "Year":"2012",
+  "Rated":"R",
+  "Released":"21 Sep 2012",
+  "Runtime":"95 min",
+  "Genre":"Action, Crime, Sci-Fi",
+  "Director":"Pete Travis",
+  "Writer":"John Wagner (characters), Carlos Ezquerra (characters), Alex Garland (screenplay)",
+  "Actors":"Karl Urban, Rachel Wood, Andile Mngadi, Porteus Xandau",
+  "Plot":"In a violent, futuristic city where the police have the authority to act as judge, jury and executioner, a cop teams with a trainee to take down a gang that deals the reality-altering drug, SLO-MO.",
+  "Language":"English",
+  "Country":"UK, South Africa, USA, India",
+  "Awards":"2 wins & 14 nominations.",
+  "Poster":"https://m.media-amazon.com/images/M/MV5BODkyNDQzMzUzOF5BMl5BanBnXkFtZTcwODYyMDEyOA@@._V1_SX300.jpg",
+  "Ratings":[
+    {"Source":"Internet Movie Database","Value":"7.1/10"},
+    {"Source":"Rotten Tomatoes","Value":"79%"},
+    {"Source":"Metacritic","Value":"60/100"}
+  ],
+  "Metascore":"60",
+  "imdbRating":"7.1",
+  "imdbVotes":"241,678",
+  "imdbID":"tt1343727",
+  "Type":"movie",
+  "DVD":"08 Jan 2013",
+  "BoxOffice":"$13,401,683",
+  "Production":"Lionsgate Films",
+  "Website":"N/A",
+  "Response":"True"},
+
+{
+  "movie.name": "Title",
+  "movie.release.date": "Released",
+  "movie.runtime": "Runtime",
+  "movie.genre": "Genre",
+  "[movie.]director.name": "Director",
+  "[movie.]writer.name": "Writer",
+  "[movie.]actor.name": "Actors",
+  "movie.language": "Language",
+  "[movie.]country.name": "Country"
+}]

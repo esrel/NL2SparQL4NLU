@@ -1,72 +1,7 @@
-## intent:actor
-- star of [thor](movie.name)
-- who is in the movie [the campaign](movie.name)
-- list the cast of the movie [the campaign](movie.name)
-- who was in [twilight](movie.name)
-- who is in [vulguria](movie.name)
-- actor from [lost](movie.name)
-- who played in the movie [rocky](movie.name)
-- who played in the movie [captain america](movie.name)
-- cast and crew for [in july](movie.name)
-- who is in movie [in july](movie.name)
-- who 's in [star wars episode four](movie.name)
-- who was in [apollo thirteen](movie.name)
-- who was [apollo thirteen](movie.name) 's cast
-- search for information about the cast and crew of [appolo thirteen](movie.name)
-- i would like to know more about the cast and crew of the movie [apollo thirteen](movie.name)
-- who starred in [the avengers](movie.name)
-- cast for [finding nemo](movie.name)
-- actor from [lassie](movie.name)
-- list actors in the movie [midnight cowboy](movie.name)
-- [dirty dancing](movie.name) actors
-- who are cast and crew of [dirty dancing](movie.name)
-- who was in [hitch](movie.name)
-- who is in the cast of [hitch](movie.name)
-- star of [facts of life](movie.name)
-- show me movie credits
-- who does the voices for the movie
-- find movie actors
-- show credits - [forager](movie.name)
-- star of [modern family](movie.name)
-- look up information about the cast crew of [go](movie.name)
-- find information about the cast and crew of [go](movie.name)
-- who was in the cast of [go](movie.name)
-- can you find the lead actor in [pretty women](movie.name)
-- who played the voice of [nemo](character.name) in [finding nemo](movie.name)
-- who played [richie cunningham](character.name) in [happy days](movie.name)
-- who stars in [house at the end of the street](movie.name)
-- show me the cast for the [house at the end of the street](movie.name)
-- cast and crew of [house at the end of the street](movie.name)
-- [ethel](character.name) actress from [i love lucy](movie.name)
-- actress who played [ethel](character.name) on [i love lucy](movie.name)
-- who are the cast members in [lord of the rings the two towers](movie.name)
-- who played [hawkeye](character.name) in [mash](movie.name)
-- who played [mother](character.name) in [tarkovsky](director.name) 's [mirror](movie.name)
-- show me the actor of the movie [muthyala muggu](movie.name)
-- who are the [droids](character.name) in [star wars episode four](movie.name)
-- who was that guy again who was in [the avengers](movie.name)
-- which actor played [frodo](character.name) in [lord of the rings](movie.name)
-- find the male actor from [grand torino](movie.name)
-- who played the female lead in [hitch](movie.name)
-- find the female actress from [shallow hal](movie.name)
-- who is in picture three
-- who are the lead actors
 
-## intent:actor_name character
-- what are the actors names and parts in [finding nemo](movie.name)
 
-## intent:actor_name
-- searching for names of crew members of [appollo thirteen](movie.name)
-- find the name of the actress who played [mother](character.name) in [mirror](movie.name) by [andrey tarkovsky](director.name)
-- what is the name of the actress who played [mother](character.name) in [tarkovsky](director.name) 's [mirror](movie.name)
-- what is the name of the actor who played [todd](character.name) in the tv show [one life to live](movie.name)
-- give me the name of the main actress in [platoon](movie.name)
-- what 's the name of the [mom](character.name) on [seinfeld](movie.name)
-- name the co-star in [shoot to kill](movie.name)
-- what is the name of the actor who played [atticus finch](character.name) in [to kill a mockingbird](movie.name)
-- show me the name of the guy who was the [father and a lawyer](character.name) in [to kill a mockingbird](movie.name)
 
-## intent:budget
+## intent:movie.budget
 - budget for [dark knight](movie.name)
 - what was the budget for [the godfather](movie.name)
 - budget for [twilight](movie.name)
@@ -77,7 +12,6 @@
 - please tell me how much was the budget for [avatar](movie.name)
 - how much money did they spend to make [avatar](movie.name)
 - [avatar](movie.name) 's budget
-- how much did [avatar](movie.name) take in
 - please show me what the budget was for [avatar](movie.name)
 - what was the budget for the [avatar](movie.name) movie
 - can you tell me the budget of the movie [avatar](movie.name)
@@ -93,8 +27,8 @@
 - search budget for the movie [epic](movie.name)
 - what was the budget for [fire proof](movie.name)
 - what was the budget for [fly whele](movie.name)
-- what was the budget for 1st [harry potter](movie.name) movie
-- how much was spent on shooting the last [harry potter](movie.name) film
+- what was the budget for [1st](movie.sequence) [harry potter](movie.name) movie
+- how much was spent on shooting [the last](movie.sequence) [harry potter](movie.name) film
 - how much does it cost to produce [looper](movie.name)
 - how much did it cost to produce [looper](movie.name)
 - how much money was spent to produce [looper](movie.name)
@@ -104,21 +38,21 @@
 - show me the budget for [star wars 2](movie.name)
 - how much did it cost to create [the boardwalk empire](movie.name)
 - show me the budget for [expendables 1](movie.name)
-- what was the budget for [finding nemo](movie.name) in 3d
+- what was the budget for [finding nemo](movie.name) in [3d](movie.format)
 
-## intent:movie_count
-- how many movies has [kevin bacon](actor.name) been the lead actor in
+## intent:movie.count
+- how many movies has [kevin bacon](actor.name) been the [lead](actor.type:star) actor in
 - how many [star wars](movie.name) movies are there
 - how many movies are rated [g](rating.name)
-- [spain](country.name) has how many movies
-- how many movies has [kristen stewart](actor.name) starred in
+- [spain](movie.origin+country.name) has how many movies
+- how many movies has [kristen stewart](actor.name) [starred](actor.type:star) in
 - how many movies has [robert wise](director.name) directed
 - how many movies did [alfred hitchcock](director.name) direct
 - how many movies has [paramount](producer.name) done
 - how many [woody allen](director.name) movies are set in [new york city](movie.location)
 - how many [scorsese](producer.name) films were filmed in [france](movie.location)
 
-## intent:country
+## intent:movie.origin
 - i would like to know the name of the country from where the movie [kati patang](movie.name) comes
 - what country is [bullhead](movie.name)
 - what country made [black swan](movie.name)
@@ -137,16 +71,15 @@
 - where was [black swan](movie.name) directed
 - where was [muriel 's wedding](movie.name) shot
 
-## intent:release_date
+## intent:movie.release_date
 - when will [top gun](movie.name) be released
 - release year and date for [casino](movie.name)
-- when did [will ferrell](actor.name) begin acting
 - show me when [24](movie.name) will be released
 - can i have release date of movie
 - movie 's release date
 - show me when the movie was made
 - when the movie [titanic](movie.name) was released
-- what year did the [italian](country.name) movie [roman holiday](movie.name) come out
+- what year did the [italian](movie.origin.language) movie [roman holiday](movie.name) come out
 - can you please search for release date for [karate kid](movie.name)
 - [karate kid](movie.name) release date please
 - when was [dirty dancing](movie.name) released
@@ -179,13 +112,12 @@
 - what day will [django unchained](movie.name) come out
 - when will i be able to view [iron man 3](movie.name)
 - on what date will [iron man 3](movie.name) be released
-- when was the movie [barfi !](movie.name) released
-- what are the dates for the movie [barfi !](movie.name)
+- when was the movie [barfi](movie.name) released
+- what are the dates for the movie [barfi](movie.name)
 - release date of the new [bugs bunny](movie.name) film
 - what is the release date of [evil goes global](movie.name)
 - what is the release date for [jaws 17](movie.name) in the theaters
 - what is the release date for [jurassic park 4](movie.name)
-- list release dates for the [jurassic park](movie.name) movies
 - when will the movie [omg oh my god](movie.name) be released
 - when was the [lord of the rings](movie.name) movie released
 - whats [paranormal activities](movie.name) release date
@@ -205,15 +137,13 @@
 - director of [titanic](movie.name)
 - [titanic](movie.name) director
 - [avengers](movie.name) movie director
-- dirctor of movie [avengers](movie.name)
+- director of movie [avengers](movie.name)
 - who was the director for [nacho libre](movie.name)
 - director for [big](movie.name)
 - who was the director of [welcome to the dollhouse](movie.name)
 - who directed the movie [house at the end of the at the street](movie.name)
 - who was the director of the movie [toy story](movie.name)
-- list director [gilda](movie.name)
 - who directed [field of dreams](movie.name)
-- who is the second director on [finding nemo](movie.name)
 - find director of [finding nemo](movie.name)
 - who directed [finding nemo](movie.name)
 - [finding nemo](movie.name) directed by who
@@ -222,7 +152,7 @@
 - i want to know who is the director of the movie [batman](movie.name)
 - who is director of [the words](movie.name)
 - who directed [million dollar baby](movie.name)
-- who was the guy that directed [moneyball](movie.name)
+- who was the [guy](director.gender:male) that directed [moneyball](movie.name)
 - who did [twilight](movie.name)
 - [twilight](movie.name) director
 - who directed [twilight](movie.name)
@@ -241,26 +171,27 @@
 - who directed [ai](movie.name)
 - find the director of [downton abbey](movie.name)
 - who directed [good bad and ugly](movie.name)
-- i can 't remember who directed [star wars](movie.name)
+- i ca n't remember who directed [star wars](movie.name)
 - find the director of [to kill a mockingbird](movie.name)
-- i 'd like to see popular film directors from the [nineteen fifty 's through today](movie.release_date)
-- best director
-- best directors of all time
-- please show me famous film directors
-- greatest directors
-- who produced some of the most popular movies
-- show me successful movie directors
-- who produced [hotel rwanda](movie.name) cover art
+- [best](director.attr) director
+- [best](director.attr) directors of all time
+- please show me [famous](director.attr) film directors
+- [greatest](director.attr) directors
+- who produced some of [the most popular](movie.attr) movies
+- show me [successful](director.attr) movie directors
 - who 's the director
 
-## intent:director_name
+## intent:movie.illustrator
+- who produced [hotel rwanda](movie.name) [cover art](movie.cover)
+
+## intent:director.name
 - find the name of the director of [return](movie.name)
 - show movie [avengers](movie.name) director name
 - name the director in [sleepless in seattle](movie.name)
 - director 's name
 - what is the name of a [turkish](director.nationality) director that produced a [drama](movie.genre) film
 
-## intent:genre
+## intent:movie.genre
 - what 's the genre for [black swan](movie.name)
 - what is [black swan](movie.name) 's genre
 - what genre is [parenthood](movie.name)
@@ -281,7 +212,7 @@
 - can you tell me [pretty girl](movie.name) the movie 's genre
 - what genre is the movie [pitch perfect](movie.name)
 
-## intent:language
+## intent:movie.language
 - in what language is this movie
 - what language is this movie
 - what language is the movie [hero](movie.name) in
@@ -290,326 +221,64 @@
 - what language is [head on](movie.name) in
 - language of [spanglish](movie.name)
 - find out what language [the father of my children](movie.name) is in
-- i am intersted in viewing [belle](movie.name) what foreign language is the movie available in
-- is [amelie](movie.name) in a different language
 - what language was [amelie](movie.name) filmed in
 - what language is the [full monty](movie.name) in
 - what is [ju on](movie.name) 's original language
 - what language is [secrets and lies](movie.name) in
 
-## intent:movie_name
+## intent:movie.language.alternative
+- i am interested in viewing [belle](movie.name) what foreign language is the movie available in
+
+## intent:movie.name.list
 - i need to find out about names of some [japanese](movie.language) movies
 - can you tell me names of some [japanese](movie.language) movies
-- [ron howard](producer.name) name some of the movies he produce
 - tell me the names of the movies produced by [william packer](producer.name)
 - give me names of some [action](movie.genre) movies with a [pg thirteen](rating.name) rating
-- what was the name of an [academy](award.ceremony) award winning [russian](country.name)
-- what movie titles starring [meryl streep](actor.name) earned [oscar](award.ceremony) nominations
+- what movie titles [starring](actor.type:star) [meryl streep](actor.name) earned [oscar](award.ceremony) nominations
 
-## intent:movie
-- about [life is beautiful](movie.name)
-- show me info on [life is beautiful](movie.name)
-- find old movies
-- find newly released movies in [spanish](movie.language)
+
+
+## intent:movie.actor.bool
 - was [bill paxton](actor.name) in the movie [apollo thirteen](movie.name)
 - was [kevin bacon](actor.name) in the movie [apollo thirteen](movie.name)
-- find movies about [dancing](movie.subject)
-- search for movies about [dancing](movie.subject)
-- show [will ferrell](actor.name) films
-- [will ferrell](actor.name) movies
-- what movies has [will ferrell](actor.name) appeared in
-- find [russian](movie.language) movies
-- [feral](movie.name)
-- the movie is called [big](movie.name)
-- [will smith](actor.name) acting carrer
+
+
+## intent:movie.count
 - how many movies did [peter jackson](director.name) do
-- search for [tim burton](director.name) movies in [french](movie.language)
-- exhibit all details of original [finding nemo](movie.name) movie
-- [finding nemo](movie.name) movie
-- find the movie [finding nemo](movie.name)
-- i am looking for information on the movie [finding nemo](movie.name)
-- show me details for the movie [finding nemo](movie.name)
-- what did [andrew stanton](director.name) direct
-- show me some other movies directed by [andrew stanton](director.name)
-- display [albert brooks](actor.name) movie
-- show a movie with [albert brooks](actor.name) in the cast
-- what other films has [sergio leone](director.name) directed
-- what movies has [george harrison](producer.name) produced
-- what has [charlie sheen](actor.name) starred in
-- please find the movies in which [clive owen](actor.name) has appeared
-- in which movies has [clive owen](actor.name) appear
-- [spike lee](director.name) directed what movie
-- search for movies directed by [spike lee](director.name)
-- please list all movies not rated [pg](rating.name)
-- find movies
-- i want a list of [english](movie.language) speaking movies
-- a list of movies made in [america](country.name)
-- are there any movies produced in [the united states](country.name)
-- show [english](movie.language) movies
-- search [english](movie.language) movies
-- [comedy](movie.genre)
-- find a [comedy](movie.genre)
-- watch [comedy](movie.genre) movies
-- get [horror](movie.genre) films
-- show me [horror](movie.genre) movies
-- i want to see a listing of [horror](movie.genre) movies
-- show actor [bruce willis](actor.name) movies
-- which movies did [bruce willis](actor.name) star in
-- list movies with [bruce willis](actor.name)
-- show me movies made in [canada](country.name)
-- can i watch a [canadian](country.name) film
-- see [canadian](country.name) movies
-- search for information about [canadian](country.name) movies
-- I 'd like to see some [italian](country.name) films
-- show me something [italian](country.name) - made
-- i want to see a movie from [spain](country.name)
-- find movies from [spain](country.name)
-- [spain](country.name) country movies
-- display a list of [spanish](country.name) films
-- [spanish](country.name) movie listing
-- [spanish](country.name) movies
-- find some [romantic](movie.genre) movies
-- i want to see a movie in [french](movie.language)
-- [gwyneth paltrow](actor.name) movies
-- find movies with [quentin tarantino](director.name) as director
-- [england](country.name) movies
-- [england](country.name) movies please
-- find [david tennant](actor.name) movies
-- show me what [richard lester](director.name) directed
-- get films in [hindi](movie.language)
-- show me movies from [india](country.name)
-- what is a [british](country.name) [horror](movie.genre) movie
-- i want to watch an [r](rating.name) rated [comedy](movie.genre)
-- list of [french language](movie.language)
-- look for [dirty dancing](movie.name) movie with [jennifer grey](actor.name)
-- tell me in detail about the movie [dirty dancing](movie.name)
-- tell about movie [dirty dancing](movie.name)
-- can i see a list of [bette midler](actor.name) movies
-- list of movies starring [bette midler](actor.name)
-- show me all of [anne hathaway](actor.name) 's movies
-- what movies has [sandra bullock](producer.name) produced
-- find me movies from [portugal](country.name)
-- what movies has [robert redford](actor.name) been in
-- [dirty dancing](movie.name) info
-- [dirty dancing](movie.name)
-- give a short bio for [dirty dancing](movie.name)
-- about [dirty dancing](movie.name)
-- movies from [japan](country.name)
-- show movies from [japan](country.name)
-- list [japanese](movie.language) movies
-- show me [japanese](movie.language) movies
-- give me a list of some [japanese](movie.language) movies
-- give me a list of [japanese](movie.language) movies
-- [japanese](movie.language) movies
-- show me [japanese language](movie.language) movies
-- which films are spoken in [japanese](movie.language)
-- [miramax films](producer.name) only
-- show movies by [miramax](producer.name)
-- search [sandra bullock](actor.name) movies
-- watch [sandra bullock](actor.name) movies
-- find movies about [vampires](movie.subject)
-- find movies having [vampires](movie.subject)
-- [will smith](actor.name) movies
-- [cars](movie.name) movie
-- what movies did [darla anderson](producer.name) produce
-- what films are made by [paramount](producer.name)
-- show me movies by [paramount](producer.name)
-- what movies has [paramount](producer.name) released
-- show all movies from [turkey](country.name)
-- show me movies produced by [bruce lee](producer.name)
-- is [parenthood](movie.name) a [drama](movie.genre)
-- i want to see an [kevin james](actor.name) film tonight
-- find films from [china](country.name)
-- get films from [china](country.name)
-- i 'd like to watch a movie made in [china](country.name)
-- list some movies from [china](country.name)
-- [chinese](movie.language) films
-- show me other [chinese](movie.language) movies
-- show me [chinese](movie.language) movies
-- what movies have a [pg-13](rating.name) rating
-- please list movies that are rated [pg-13](rating.name)
-- i need a [g](rating.name) rating so i can take the kids
-- find a [g](rating.name) rated movie
-- find [g](rating.name) movies
-- find [g](rating.name) movies
-- i want rated [g](rating.name) movies
-- look up [g](rating.name) rated movies
-- i am searching for any [g](rating.name) rated movies for my children to view
-- rated [g](rating.name) movies for family watching
-- find [g](rating.name) rated movies
-- are there any movies rated [g](rating.name) playing
-- i want to see movies rated [g](rating.name)
-- find movies rated [g](rating.name)
-- show me movies with [g](rating.name) rating
-- did [robert wise](director.name) direct any other musicals
-- [bruce lee](producer.name) produced movie listing
-- what was the last movie made by [robert wise](director.name)
-- find movies produced by [mgm](producer.name)
-- show me [british](country.name) made movies
-- movies from [the uk](country.name)
-- find me movies from [the uk](country.name)
-- can you list [ron howard](producer.name) movie production
-- i need to know the movies produce by [ron howard](producer.name)
-- did [clint eastwood](director.name) direct any other movies besides [million dollar baby](movie.name)
-- find movies directed by [clint eastwood](director.name)
-- what movies have been directed by [clint eastwood](director.name)
-- list all movies that were directed by [clint eastwood](director.name)
-- what movies has [clint eastwood](director.name) directed
-- show movies directed by [clint eastwood](director.name)
-- find all films by [stanley kubrick](director.name)
-- i want to select the option to search for movies produced by [stephen spielberg](producer.name)
-- i would like to search for movies produced by [stephen speilberg](producer.name)
-- show me [japanese](movie.language) [horror](movie.genre) movies
-- i would like to see movies [ron howard](director.name) directed
-- movies by [stephen](producer.name)
-- movies by [stephen](producer.name)
-- what movies did [stephen](producer.name) [spielberg](director.name) direct
-- list [steven spielberg](director.name) movies
-- [steven spielberg](director.name) movie
-- [steven spielberg](director.name) movies please
-- directed by [steven spielberg](director.name)
-- find the [steven spielberg](director.name) movies
-- find movies from [steven spielberg](director.name)
-- i would like to watch a movie directed by [eddie murphy](director.name)
-- [the camp](movie.name)
-- watch [sandra bullock](actor.name) [the blind side](movie.name)
-- i want to see movies with [hugh jackman](actor.name)
-- list movies with [kevin spacey](actor.name)
-- look for movies from [france](country.name)
-- can you show me movies that were made in [france](country.name)
-- find me any movies that were made in [france](country.name)
-- [french](movie.language) movies please
-- [french](movie.language) movies
-- find movies produced by [mosfilm](producer.name)
-- what was [kristen stewart](actor.name) 's first movie
-- get me movies directed by [miranda july](director.name)
-- [tom hanks](actor.name) movies
-- show me movies with [tom hanks](actor.name)
-- i am trying to find a list of movies with [tom hanks](actor.name)
-- provide movies directed by [oliver stone](director.name) please
-- i want to look for movies produced by [albert ruddy](producer.name)
-- what are all of the movies produced by [albert ruddy](producer.name)
-- movies produced by [yash chopra](producer.name)
-- what did [brad pitt](producer.name) porduce
-- bring up all [brad pitt](producer.name) produced movies
-- show all movies that [penny marshall](director.name) directed
-- i need a list of all the movies directed by [james cameron](director.name)
-- give me a list of all the movies directed by [james cameron](director.name)
-- [james cameron](producer.name) movies produced
-- movies produced by [james cameron](producer.name)
-- what films have been produced by [warner bros.](producer.name)
-- find movies produced by [warner bros.](producer.name)
-- what movies have been produced by [warner bros.](producer.name)
-- show me movies [by](producer.name) wb
-- give me information about [finding nemo](movie.name)
-- i want information about [finding nemo](movie.name)
-- show me [finding nemo](movie.name)
-- [finding nemo](movie.name) bing
-- search [finding nemo](movie.name)
-- show information page for [finding nemo](movie.name)
-- [the campaign](movie.name) information
-- more information on [apallo thirteen](movie.name)
-- research [apollo thirteen](movie.name)
-- has [kristen stewart](actor.name) starred in movies other than [twilight](movie.name)
-- show me [kristen stewart](actor.name) movies
-- what movies has [kristen stewarted](actor.name) starred in
-- [lionsgate](producer.name) movies
-- show [lionsgate](producer.name) movies
-- show movies made by production [lionsgate](producer.name)
-- give me something by [charles vidor](director.name)
-- show [charles vidor](director.name) movie
-- what film did [charles vidor](director.name) direct
-- which movies have been made outside [the united states](country.name)
-- find me [nigeria](country.name) movies
-- display [7 arts](producer.name) movies
-- [korean](movie.language) movie
-- what other movies did [roberto benigni](actor.name) star in
-- i want to see movies starring [denzel washington](actor.name) please
-- list the [kareena](actor.name) 's movie
-- i want to watch a [drama](movie.genre) made in [turkey](country.name)
-- [jennifer lopez](actor.name) played in what movies
-- show me all of the movies directed by [woody allen](director.name)
-- show [robert wise](director.name) movies
-- want to see [robert wise](director.name) movies
-- what movies has [robert wise](director.name) directed
-- what movies have [robert wise](director.name) directed
-- where can i find a list of movies produced by [chris nolan](producer.name)
-- what movies has [brad pitt](actor.name) been in
-- what are the movies [brad pitt](actor.name) had been in
-- what are some movies with [brad pitt](actor.name)
-- find an [r](rating.name) rated movie
-- show me [r](rating.name) rated movies
-- give me a list of [r](rating.name) rated movies
-- look up [r](rating.name) rated movies
-- i want only [r](rating.name) rated movies
-- i want to see a list of rated [r](rating.name) movies
-- show me only movies with a rating of [r](rating.name)
-- please look for movies with an [r](rating.name) rating
-- show me movies rated [r](rating.name)
-- look for movies with an [r](rating.name) rating
-- give me a list of all movies that are rated [r](rating.name)
-- i want to watch movies from [norway](country.name)
-- can i have a list of [spanish](movie.language) speaking movies
-- show me movies made in [mexico](country.name)
-- show me the movie [pot zombies](movie.name)
-- what movies have [zombies](movie.subject) in them
-- show me movies about [zombies](movie.subject)
-- show me movies about [zombies](movie.subject)
-- show me ones by [david fincher](director.name)
-- show [ridley scott](director.name) 's filmography
-- find [ridley scott](director.name) movies
-- can you show me movies directed by [ridley scott](director.name)
-- list [german](movie.language) movies
-- [german](movie.language) movies
-- find [action](movie.genre) films
-- find some [action](movie.genre) movies
-- list [dredd](movie.name) movie
-- show me [george lucas](director.name) movies
-- find movies directed by [george lucas](director.name)
-- please find movies produced by [morgan freeman](producer.name)
-- please look up movies produced by [morgan freeman](producer.name)
-- search for movies produced by [morgan freeman](producer.name)
-- find movies produced by [morgan freeman](producer.name)
-- look up movies produced by [morgan freeman](producer.name)
-- what movies has [meryl streep](actor.name) starred in
+
+
+
+## intent:list/movie
 - show me the movies directed by the director of this movie
-- i want to see movies made in [russia](country.name)
-- look up [star wars four](movie.name) movie
-- display all details about [star wars - a new hope](movie.name) movie
-- get all details about [star wars - a new hope](movie.name) movie
-- [star wars episode four](movie.name)
-- i want [star wars four](movie.name) main page
-- search [star wars four](movie.name)
-- find me tons of info related to [star wars four](movie.name)
-- get details of [in july](movie.name) movie
-- find details of [in july](movie.name) movie
-- show details of [in july](movie.name) movie
-- tell me about [in july](movie.name) movie
-- look up the movie [in july](movie.name)
-- display information for the movie title [in july](movie.name)
-- movie [in july](movie.name) data
+
+
+
+
+
+
+
+
+
+- i want to see movies made in [russia](movie.origin.country.name)
 - where can i find the movie [aankhen](movie.name) in [hindi](movie.language)
 - display [julia roberts](actor.name) films
-- list the movies that have the actress [angelina jolie](actor.name)
+- list the movies that have the [actress](mod:actor.gender:female) [angelina jolie](actor.name)
 - [dustin hoffman](actor.name) movies
 - what movies did [david ayer](director.name) direct
 - i would like to view movies produced by [clint eastwood](producer.name)
 - list all movies about [horses](movie.subject)
 - find all [johnny depp](actor.name) movies
-- is there any upcoming movies from [warner brothers](producer.name)
+- is there any [upcoming](mod:release_date:future) movies from [warner brothers](producer.name)
 - bring up movies with [ice skating](movie.subject) in it
-- find newly released [comedies](movie.genre) from [england](country.name)
-- i need info on [house at the end of the street](movie.name)
-- what is the [houses at the end of the street](movie.name) about
-- give me more facts about the movie [house at the end of the street](movie.name) in detail
-- i would like to know in detail about the movie [house at the end of the street](movie.name)
-- display movie information for the film [house at the end of the street](movie.name)
+- find [newly](mod:release_date:sort:desc) released [comedies](movie.genre) from [england](movie.origin.country.name)
+
+
 - films with [chinese](movie.language)
 - i want to watch a movie in [chinese](movie.language)
 - find movies produced and directed by [tyler perry](producer.name)
 - [tom cruise](actor.name) movies please
 - i want [tom cruise](actor.name) movies please
-- which movies star [tom cruise](actor.name)
+- which movies [star](actor.type:star) [tom cruise](actor.name)
 - which movies do [tom cruise](actor.name) play in
 - find [end of watch](movie.name)
 - looking for movies of [yash chopra](director.name)
@@ -628,7 +297,7 @@
 - movies by [alfred hitchcock](director.name)
 - what movies did [alfred hitchcock](director.name) make
 - watch [hitchcook](director.name) movies
-- i want to see any current movies starring [tom hanks](actor.name)
+- i want to see any current movies [starring](actor.type:star) [tom hanks](actor.name)
 - i want a list of recent movies rated [pg](rating.name)
 - give me a list of recent movies rated [pg](rating.name)
 - [ray stark](producer.name) produced what other movies
@@ -716,12 +385,12 @@
 - list movies from [1995](movie.release_date) with [adam sandler](actor.name)
 - i want to see movies with [alan rickmman](actor.name)
 - which movies has [angelina jolie](actor.name) starred [this season](movie.release_date)
-- what movie was [angelina](actor.name) a [main actress](character.name)
-- look up movies starring the [singer](actor.type)
-- i want to find movies starring the [singer](actor.type)
+- what movie was [angelina](actor.name) a [main](actor.type) [actress](actor.gender:female)
+- look up movies [starring](actor.type:star) the [singer](actor.type)
+- i want to find movies [starring](actor.type:star) the [singer](actor.type)
 - look for movies with [max von sudow](actor.name)
 - show me movies that have [patrick swayze](actor.name) and [jennifer grey](actor.name) in them
-- show me movies that star [patrick swayze](actor.name) starred in from [nineteen eighty seven](movie.release_date)
+- show me movies that [star](actor.type:star) [patrick swayze](actor.name) starred in from [nineteen eighty seven](movie.release_date)
 - what is that [dancing](movie.subject) movie with [patrick swayze](actor.name)
 - movies of [sharukh khan](actor.name)
 - movie that [tom hanks](actor.name) and [kevin becon](actor.name) played in together
@@ -882,7 +551,7 @@
 - i need to know more about the life and movies of [indian](actor.nationality) actor [dilip kumar](actor.name)
 
 ## intent:person_name
-- find the name of the producer of [avatar](movie.name)
+- find thenameof the producer of [avatar](movie.name)
 
 ## intent:producer
 - producer [hitch](movie.name)
@@ -926,7 +595,7 @@
 - who produced the movie [great debaters](movie.name)
 - [king 's speech](movie.name) production company
 - i wonder who produced [star wars](movie.name)
-- i can 't remember who produced [star wars](movie.name)
+- i ca n't remember who produced [star wars](movie.name)
 - who produced [star wars](movie.name)
 - movie producers
 - show me a list of production companies
@@ -1002,12 +671,18 @@
 ## intent:company
 - [liongate](producer.name)
 
-## intent:movie_other
+## intent:movie.other
 - show me the viewer ratings [in orange](movie.name)
-- is [in july](movie.name) on netflix
+- is [in july](movie.name) on [netflix](movie.service)
 - rate movies
-- find the actor that sings let me love you
+
+## intent:actor
+- find the actor that sings [let me love you](song.name)
+
+## intent:person
 - what is [steven spielberg](person.name) up to
+
+
 - [israel](country.name) are all your movies in your native language or in [english](movie.language)
 - what 's playing tonight
 - where can i buy this movie
@@ -1020,7 +695,11 @@
 - dvd [finding nemo](movie.name)
 - find movie from criteria
 - find a movie
+
+## intent:movie
 - can you tell me which movie made the most at the box office in the weekend of september twenty eighth
+
+
 - find movies selected on all criteria
 - options available for movies today
 - find all selected criteria
@@ -1037,14 +716,18 @@
 - show me the sequels or prequels to this movie
 - how long did it take [james cameron](producer.name) to produce [avatar](movie.name)
 - is this film dubbed in [english](movie.language)
-- [apollo thirteen](movie.name) cast was chosen how
+- [apollo thirteen](movie.name) [cast](actor.list) was chosen how
 - what other formats is [finding nemo](movie.name) in
 - in how many days did it take to make [twenty one point two](movie.gross_revenue) for [looper](movie.name)
 - what age group is for rated [r](rating.name) movies
 - show me the behind scenes of the movie [in orange](movie.name)
-- how long do you predict that [wb](producer.name) will continue to strive in today 's market
+- how long do you predict that [wb](producer.name;ORG) will continue to strive in today 's market
 - the crap
+
+## intent:FAQ
 - who determines the ratings on movies
+
+
 - [house at the end of the street](movie.name) should of made more money
 - find me [dirty dancing](movie.name) news
 - who else could have preformed your job
@@ -1054,7 +737,11 @@
 - what is the standard to be rated [g](rating.name)
 - i love [taye diggs](person.name)
 - show me the movie reviews in orange
+
+
 - show me celebrities
+
+
 - how old do you have to be to see an [r-rated](rating.name) movie
 - does [ireland](country.name) have an equivalent to th [us](country.name) [oscar](award.ceremony) awards
 - click on the most popular movie in orange
@@ -1084,57 +771,59 @@
 - when the movie comes out do you think it will raise in the box office
 - show me the movie list in orange
 
+## intent:movie
+- [out camping](movie.name)
+- [happy](movie.name)
+- [interesting](movie.name)
+- [classic cars](movie.name)
+- i want to learn about [flowers](movie.name)
+- on [lies](movie.subject)
+
 ## intent:other
 - show me the story of the [armstrong siddeley](person.name)
-- classic cars
-- i want to learn about flowers
-- out camping
-- happy
-- interesting
 - sort by [spanish](movie.language)
 - where is [punjabi](movie.language)
 - what is [robert wise](person.name) 's middle name
-- ferret
-- forty three million what
-- twenty one point two million dollars was divided between who
+- [ferret](movie.name)
+- [forty three million](movie.budget) what
+- [twenty one point two million dollars](movie.budget) was divided between who
 - do movie authors use real countries
-- on lies
-- the movie [a tanu](movie.name) is from [hungary](country.name) ; where is the country [hungary](country.name)
+- the movie [a tanu](movie.name) is from [hungary](movie.country.name) where is the country [hungary](country.name)
 - how fun is it to produce a movie
 - did you like working with who you did
 - can i see a map of [canada](country.name)
 - was your journey worth it
-- south american country flags
+- [south american](location.other) country flags
 - need more info that relates to [china](country.name)
-- flags of planet earth
+- flags of [planet earth](location.other)
 - best writers in the field
 
-## intent:birth_date
+## intent:person.birth_date
 - how old is [jennifer aniston](person.name)
 - when was [will ferrell](person.name) born
 
-## intent:description
+## intent:movie.description
 - show movie description
 
-## intent:media
+## intent:movie
 - watch [dredd](movie.name) movie
 - see [dredd](movie.name) movie
 
-## intent:movie actor_name
+## intent:actor.name.list
 - in search for names of crew members please
 
-## intent:movie review
-- get me reviews and info about [the campaign](movie.name) movie
-- show me reviews and info for [the campaign](movie.name)
+## intent:organization.image
+- what does the [miramax](producer.name;ORG) logo look like
 
-## intent:picture
-- what does the [miramax](producer.name) logo look like
+## intent:person.image
 - show me pictures of [martin scorsese](person.name)
 - photos of [steven spielberg](person.name)
 - i want to see images of [will ferrell](person.name)
 - show me pictures of [woody allen](person.name)
 
-## intent:review
+## intent:movie.review
+- get me reviews and info about [the campaign](movie.name) movie
+- show me reviews and info for [the campaign](movie.name)
 - reviews for [dirty dancing](movie.name)
 - find reviews for [dirty dancing](movie.name)
 - what are reviews for [finding nemo](movie.name)
@@ -1146,18 +835,18 @@
 - reviews for [in july](movie.name)
 - what are the reviewers saying about [star wars episode four](movie.name)
 
-## intent:runtime
+## intent:movie.runtime
 - how long is [life is beautiful](movie.name)
 
-## intent:synopsis
+## intent:movie.synopsis
 - synopsis for the movie [house at the end of the street](movie.name)
 - synopsis for [star wars four](movie.name)
 - summary of [star wars four](movie.name)
 
-## intent:trailer
+## intent:movie.trailer
 - [finding nemo](movie.name) movie shortcut
 - show me the trailer for [house at the end of the street](movie.name)
 - [life is beatiful](movie.name) shortcut
 - trailer for [star wars a new hope](movie.name)
 - show [resident evil](movie.name) movies with trailers
-- can i see previews for upcoming [warner brothers](producer.name) movies
+- can i see previews for upcoming [warner brothers](producer.name;ORG) movies

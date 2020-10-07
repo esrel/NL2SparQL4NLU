@@ -407,7 +407,8 @@ for	O
 apollo	B-movie.name
 thirteen	I-movie.name
 
-castmembers	O
+cast	O
+members	O
 of	O
 apollo	B-movie.name
 thirteen	I-movie.name
@@ -520,8 +521,8 @@ gilda	B-movie.name
 credits	O
 
 i	O
-can	O
-'t	O
+ca	O
+n't	O
 remember	O
 the	O
 lead	O
@@ -972,7 +973,8 @@ cast	O
 and	O
 crew	O
 of	O
-pitchperfect	B-movie.name
+pitch	B-movie.name
+perfect	I-movie.name
 
 actors	O
 in	O
@@ -1265,8 +1267,8 @@ apollo	B-movie.name
 thirteen	I-movie.name
 
 i	O
-can	O
-'t	O
+ca	O
+n't	O
 figure	O
 out	O
 the	O
@@ -1426,7 +1428,7 @@ cost	O
 how	O
 much	O
 did	O
-hollywood	O
+hollywood	B-ORG
 pay	O
 for	O
 black	B-movie.name
@@ -2288,7 +2290,7 @@ are	O
 made	O
 in	O
 the	O
-united	B-country.name
+united	B-country.name MOVIE.ORIGIN
 states	I-country.name
 
 where	O
@@ -3053,7 +3055,7 @@ released	O
 lion	B-movie.name
 king	I-movie.name
 release	O
-yr	O
+year	O
 
 when	O
 was	O
@@ -3563,7 +3565,6 @@ date	O
 of	O
 resident	B-movie.name
 evil	I-movie.name
-:	I-movie.name
 retribution	I-movie.name
 
 what	O
@@ -3803,8 +3804,8 @@ pi	B-movie.name
 
 who	O
 made	O
-batman	O
-the	B-movie.name
+batman	B-movie.name
+the	I-movie.name
 dark	I-movie.name
 knight	I-movie.name
 
@@ -3891,7 +3892,8 @@ night	I-movie.name
 who	O
 directed	O
 hard	B-movie.name
-days	I-movie.name
+day	I-movie.name
+'s	I-movie.name
 night	I-movie.name
 
 who	O
@@ -4443,7 +4445,7 @@ whom	O
 who	O
 else	O
 directs	O
-zombie	O
+zombie	B-movie.genre
 movies	O
 
 director	O

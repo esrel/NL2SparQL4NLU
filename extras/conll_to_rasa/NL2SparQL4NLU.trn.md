@@ -1,0 +1,605 @@
+## intent:setq/movie
+- [martin lawrence](director.name) directed what movie
+- [stephen king](director.name) directed what movie
+
+## intent:request/movie/search
+- find [ms congeniality](movie.name)
+- display all results for [dirty dancing](movie.name)
+- run a search for [finding nemo](movie.name) for me please
+- run a search for [life is beautiful](movie.name)
+- run a search for [star wars four](movie.name)
+- run a search for [the campaign](movie.name)
+- search [the campaign](movie.name) movie
+- search for [dirty dancing](movie.name)
+- search for [dirty dancing](movie.name)
+- search for the movie [life is beautiful](movie.name)
+- search the movie [in july](movie.name)
+- bring up [black swan](movie.name) production
+- find me the film [in july](movie.name)
+- find movie [finding nemo](movie.name)
+- find the movie [dirty dancing](movie.name)
+- find the movie [hum tum](movie.name)
+- look up [finding nemo](movie.name)
+- look up movie [the campaign](movie.name)
+
+## intent:request/movie/imp
+- movies starring [tom cruise](actor.name)
+- movie with [brad pitt](actor.name)
+- movies with [angelina jolie](actor.name)
+- movies with [bruce willis](actor.name)
+- movies with [harrison ford](actor.name)
+- movies with [meg ryan](actor.name)
+- movies with [sally field](actor.name)
+- movies with [sandra bullock](actor.name)
+- movies with [tom hanks](actor.name)
+- movies [patrick swayze](actor.name) played in
+- movies [will ferrell](actor.name) played in
+- movies [will smith](actor.name) stars in
+
+- [john paul](director.name) directed movies
+- filmography for [steven spielberg](director.name)
+- movies by director [john paul](director.name)
+- movies directed by [clint eastwood](director.name)
+- movies directed by [steven spielberg](director.name)
+- movies that have been directed by [tony scott](director.name)
+
+- [ron howard](producer.name) movies produce list
+- [julian fellows](producer.name) productions
+- films produced by [laurie macdonald](producer.name)
+- movies [tom cruise](producer.name) produced
+- producer [tom hanks](producer.name) movies
+
+- [lionsgate](producer.org) films
+- [lionsgate](producer.org) list
+- [lionsgate](producer.org) movies
+- [columbia](producer.org) production company movies
+- films produced by [twentieth century fox](producer.org)
+- movie made by [dreamworks](producer.org)
+- movie by [dreamworks](producer.org)
+
+- [g](rating.name) movies
+- [pg-13](rating.name) movies
+- [pg](rating.name) movies
+- [r-rated](rating.name)
+- [r](rating.name) rated movies
+- [r](rating.name) rated movies
+- movies with [pg](rating.name) rating
+- movies with [pg](rating.name) rating
+- movies with [r](rating.name) rating
+- movies rated [pg](rating.name)
+- rating [g](rating.name)
+- rating [g](rating.name) list
+
+- [classics](movie.genre)
+- movies that have [comedy](movie.genre)
+
+- [zombies](movie.subject)
+- [gardening](movie.subject) movies
+- [period](movie.subject) movies
+- [race car](movie.subject) movies
+- [space](movie.subject) movies
+- [time travel](movie.subject) movies
+- [classic car](movie.subject) movies
+- movies about [bank robberies](movie.subject)
+- movies about [basketball](movie.subject)
+- movies about [cars](movie.subject)
+- movies about [chess](movie.subject)
+- movies about [classic cars](movie.subject)
+- movies about [computers](movie.subject)
+- movies about [gardens](movie.subject)
+- movies about [immigration](movie.subject)
+- movies about [nature](movie.subject)
+- movies about [the president](movie.subject)
+- movies about [time travel](movie.subject)
+- movies about [time travel](movie.subject)
+- movies about [time travel](movie.subject)
+- movies about [zombies](movie.subject)
+- movies about [zombies](movie.subject)
+- movies regarding [the hobby of chess](movie.subject)
+- movies with [vampires](movie.subject)
+
+- movies from [england](country.name)
+- movies from [england](country.name)
+- movies from [france](country.name)
+- movies from [germany](country.name)
+- movies from [italy](country.name)
+- movies from [russia](country.name)
+- movies from [scotland](country.name)
+- movies from [spain](country.name)
+- movies from [spain](country.name)
+- movies from [the uk](country.name)
+- movies from [the us](country.name)
+- movies from [the us](country.name)
+- movies made in [spain](country.name)
+
+- movies from [paris](country.capital)
+
+- [italian](country.adj) films
+- [italian](country.adj) movies
+- [japanese](country.adj) movies
+- [dutch](country.adj) movie listing
+- [french](country.adj) movies
+- [german](country.adj) movie info
+- [portuguese](country.adj) movies
+- [korean](country.adj) movie
+
+- [english](movie.language) movie list
+- [spanish](movie.language) movie listing
+- [spanish](movie.language) movies
+- films with [japanese](movie.language)
+- movies in [chinese](movie.language)
+- movies in [dutch](movie.language)
+- movies in [english](movie.language)
+- movies in [french](movie.language)
+- movies in [spanish](movie.language)
+- [korean](movie.language) language movie
+- [spanish](movie.language) language movies
+- a list of all [italian](movie.language) speaking movies
+- a showing of movies that are in [spanish](movie.language)
+- movies with [italian](movie.language) language
+- movie made in [mandarin](movie.language)
+
+- movies gross revenue of [seven point two million dollars](movie.revenue)
+
+- movies in [september twenty twelve](movie.release_date)
+- movies released in [september twenty twelve](movie.release_date)
+
+## intent:request/movie
+- can i see all movies starring [alan rickman](actor.name)
+- can you find movies with [steven spielberg](actor.name)
+- can you please list all movies with [brad pitt](actor.name)
+- can you please list all movies with [brad pitt](actor.name)
+- can you please list the movies [brad pitt](actor.name) has acted in
+- find a movie with [mel gibson](actor.name)
+- find me movies with [hugh jackman](actor.name)
+- find movies starring [halle berry](actor.name)
+- find movies with [sandra bullock](actor.name)
+- find movies with [tom cruise](actor.name)
+- find movies with [tom cruise](actor.name) in them
+- find movies with [von sudow](actor.name)
+- get a list of movies with [kristen stewart](actor.name)
+- search for films with [von sudow](actor.name)
+- search movies in which [halle berry](actor.name) acted
+- look for films with [halle berry](actor.name)
+- look for movies with [brad pitt](actor.name) in them
+- list movies starring [angelina jolie](actor.name)
+- list movies with [angelina jolie](actor.name) in them
+- list of movies starring [angelina jolie](actor.name)
+- list the movies [anna paquin](actor.name) has starred in
+- list all of the movies directed by [james cameron](director.name)
+- list all of the movies that have been directed by [robert wise](director.name)
+- list movies directed by [clint eastwood](director.name)
+- list movies directed by [james cameron](director.name)
+- list of movies directed by [john paul](director.name)
+- list some movies directed by [steven spielberg](director.name)
+- look for movies directed by [tyler perry](director.name)
+- can you please make a list of all movies [brad pitt](director.name) directed
+- find [oliver stone](director.name) directed movies
+- find [spike lee](director.name) directed movies
+- find a list of movies directed by [spielberg](director.name)
+- find me a list of movies directed by [james cameron](director.name)
+- find movies directed by [chris columbus](director.name)
+- find movies directed by [eddie murphy](director.name)
+- find movies directed by [james cameron](director.name)
+- find movies directed by [niel abramson](director.name)
+- find movies directed by [oliver stone](director.name)
+- find movies directed by [stephen spielberg](director.name)
+- find movies directed by [stephen spielberg](director.name)
+- find movies directed by [steven spielberg](director.name)
+- find movies directed by [steven spielberg](director.name)
+- find movies directed by [todd solondz](director.name)
+- find movies directed by [tom hanks](director.name)
+- give me anything directed by [robert wise](director.name)
+- give me movies directed by [tyler perry](director.name)
+- i am looking for movies directed by [tom hanks](director.name)
+- i need movies directed by [oliver stone](director.name)
+- i want to find movies by director [james cameron](director.name)
+- i want to find movies directed by [stephen speilberg](director.name)
+- please find all movies [woody allen](director.name) has directed
+- please find movies directed by [stephen spielberg](director.name)
+- please provide movies directed by [oliver stone](director.name)
+- search for movies directed by [tyler perry](director.name)
+
+- can you give me a list of movies produced by [bruce lee](producer.name)
+- can you locate movies produced by [clint eastwood](producer.name)
+- can i have a list of [bruce lee](producer.name) produced movies
+- find all movies produced by [clint eastwood](producer.name)
+- find me films produced by [drew barrymore](producer.name)
+- find movies produced by [albert ruddy](producer.name)
+- find movies produced by [brian glazer](producer.name) 
+- find movies produced by [george lucas](producer.name)
+- find movies produced by [george lucus](producer.name)
+- find movies produced by [mel gibson](producer.name)
+- find movies produced by [morgan freeman](producer.name)
+- find movies produced by [spike lee](producer.name)
+- find movies produced by [steven spielberg](producer.name)
+- i am looking for movies produced by [clint eastwood](producer.name)
+- i need a list of movies produced by [clint eastwood](producer.name)
+- i need a list of movies produced by [ray stark](producer.name)
+- i want to look for movies produced by [morgan freeman](producer.name)
+- please find movies produced by [clint eastwood](producer.name)
+- please look up movies produced by [albert ruddy](producer.name)
+- please list all movies that [stephen spielberg](producer.name) produced
+- search for movies produced by [albert ruddy](producer.name)
+- search for movies produced by [morgan freeman](producer.name)
+- search for movies produced by [spike lee](producer.name)
+- select the option to search for movies produced by [stephen spielberg](producer.name)
+- i would like to select the option to search for movies produced by [stephen spielberg](producer.name)
+- list all movies produced by [alfred ruddy](producer.name)
+- list movies produced by [sean penn](producer.name)
+- locate all movies produced by [george lucas](producer.name)
+- look for movies produced by [morgan freeman](producer.name)
+
+- complete list of movies made by [searchlight films](producer.org)
+- find [twentieth century fox](producer.org) movies
+- find films made by the company [searchlight films](producer.org)
+- find me [20 th century fox](producer.org) films
+- find me [dreamworks](producer.org) films
+- find me some [warner bros](producer.org) movies
+- find movies by [twentieth century fox](producer.org)
+- find movies by [mosfilm](producer.org)
+- find movies from [miramax](producer.org)
+- find movies produced by [paramount pictures](producer.org)
+- find movies produced by [castle rock entertainment](producer.org)
+- find movies produced by [disney pixar](producer.org)
+- find movies produced by [lucas films](producer.org)
+- search for [lionsgate](producer.org) movies
+- search for [warner brothers](producer.org) movies
+- search for movies that were produced by [mosfilm](producer.org)
+- list movies by [searchlight films](producer.org)
+- list of [20 th century fox](producer.org) films
+- list of movies produced by [searchlight films](producer.org)
+- list some [paramount](producer.org) produced films
+- list all movies that [walt disney](producer.org) produced
+- list [lionsgate](producer.org) movies
+
+- can you find some [drama](movie.genre) movies
+- find [action](movie.genre) movies
+- find [classics](movie.genre)
+- find [historical](movie.genre) movies
+- find [romance](movie.genre) movies
+- find [scifi](movie.genre) films
+- find me [romantic](movie.genre) movies
+- find some [detective](movie.genre) movies
+- find some [historical romance](movie.genre) movies
+- find some [musical](movie.genre) movies
+- find some [suspenseful](movie.genre) movies
+- get a list of [animated](movie.genre) films
+- search [chick flicks](movie.genre)
+- search for [horror](movie.genre) movies
+- looking for a [comedy](movie.genre) movie
+- looking for a [drama](movie.genre) movie
+- looking for a [horror](movie.genre) movie
+- looking for a [musical](movie.genre) movie
+- looking for an [action](movie.genre) movie
+- list some [sci fi](movie.genre) movies
+- locate [romantic](movie.genre) movies for me
+- list [scifi](movie.genre)
+
+- are there any movies that have [tips about gardening](movie.subject) in them
+- are there any movies with [ice skating](movie.subject)
+- are there any movies with [skating on ice](movie.subject)
+- bring up all [diving](movie.subject) movies
+- bring up all [diving](movie.subject) related movies
+- do you have any movies about [cars](movie.subject)
+- find [classic car](movie.subject)
+- find [love stories](movie.subject)
+- find [love stories](movie.subject)
+- find [prison break](movie.subject) movies
+- find [time travel](movie.subject) movies
+- find [zombie](movie.subject) movies
+- find a movie about [apartheid](movie.subject)
+- find any movies about [horses](movie.subject)
+- find movies about [church](movie.subject)
+- find movies about [classic cars](movie.subject)
+- find movies about [dancing](movie.subject)
+- find movies about [dogs](movie.subject)
+- find movies about [gambling](movie.subject)
+- find movies about [gardening and lawn care](movie.subject)
+- find movies about [haunting](movie.subject)
+- find movies about [ice skating](movie.subject)
+- find movies about [love](movie.subject)
+- find movies about [us government](movie.subject)
+- find movies about [vietnam](movie.subject)
+- find me a movie with [zombies](movie.subject)
+- find some [zombie](movie.subject) movies
+- generate a list of movies about [ice skating](movie.subject)
+- get list of [zombie](movie.subject) movies
+- give me a list of movies that discuss [healthy eating](movie.subject)
+- give me a list of movies the deal with the topic of [healthy eating](movie.subject)
+- please list movies about [war](movie.subject)
+- please search for movies about [god](movie.subject)
+- results for [gardening](movie.subject) movies
+- search for movies about [dancing](movie.subject)
+- search for movies about [hair](movie.subject)
+- search for movies about [ice skating](movie.subject)
+- search for movies about [preschool boys](movie.subject)
+- search movies about [the october revolution](movie.subject)
+- make a list of movies about [libraries](movie.subject)
+- look up movies about [dancing](movie.subject)
+- look up movies about [god](movie.subject)
+- list some [sports](movie.subject) movies
+- list of movies about [unsolved crimes](movie.subject)
+- list movies about [libraries](movie.subject)
+- list movies about [war](movie.subject)
+- list films concerning [the country of france](movie.subject)
+- list [ice skating](movie.subject) movies please
+- i want to look up movies about [dancing](movie.subject)
+
+- are there any [canadian](country.adj) movies
+- are there any [canadian](country.adj) movies
+- do you have a list of [japanese](country.adj) movies
+- find [canadian](country.adj) films
+- find [danish](country.adj) movies
+- find [french](country.adj) films
+- find [french](country.adj) movies
+- find [french](country.adj) movies
+- find [russian](country.adj) movies
+- find [russian](country.adj) movies
+- find [indian](country.adj) movies
+- find [italian](country.adj) movies
+- find [japanese](country.adj) movies
+- find [japanese](country.adj) movies
+- find [korean](country.adj) movies
+- search for information about [american](country.adj) movies
+- get [hungarian](country.adj) films
+- get me [canadian](country.adj) movies
+- please give me a [dutch](country.adj) movie listing
+- search for [russian](country.adj) movies
+- look up [french](country.adj) movies
+- look for [french](country.adj) movies
+- look up information about [canadian](country.adj) movies
+- list [french](country.adj) movies
+- list of all [dutch](country.adj) movies
+
+- do you have any movies made in [japan](country.name)
+- find movies from [canada](country.name)
+- find movies from [france](country.name)
+- find movies from [france](country.name)
+- find movies from [france](country.name)
+- find movies from [india](country.name)
+- find movies from [japan](country.name)
+- find movies from [new zealand](country.name)
+- find movies produced in [russia](country.name)
+- get films from [the united kingdom](country.name)
+- get films made in [canada](country.name)
+- give me a list of movies from [spain](country.name)
+- give me a list of movies made in [france](country.name)
+- are there any movies made in [spain](country.name)
+- find movies done in [germany](country.name)
+- movies from [england](country.name) please
+- search for films produced in [russia](country.name)
+- look up movies from [india](country.name)
+- list [uk](country.name) movies
+
+- list [spanish](movie.language) movies
+- list [spanish](movie.language) movies
+- list movies in [french](movie.language)
+- list of [french](movie.language) language movies
+- list of all [french](movie.language) speaking films
+- list of movies in [spanish](movie.language)
+- list some movies that are in [french](movie.language)
+- list the [hindi](movie.language) movies
+- look for movies in [french](movie.language)
+- [mandarin](movie.language) movie please
+- are there any [danish](movie.language) language films around
+- are there any movies in [greek](movie.language)
+- bring up [spanish](movie.language) movies
+- can i get a list of movies available in [english](movie.language)
+- can you find me movies in [russian](movie.language)
+- can you find movies in [spanish](movie.language)
+- can you find the movies with [korean](movie.language) language
+- can you list movies in [french](movie.language)
+- do you have in movies in [german](movie.language)
+- find [english](movie.language) movies
+- find [spanish](movie.language) movies
+- find [spanish](movie.language) movies
+- find [french](movie.language) language movies
+- find [french](movie.language) language movies
+- find [hindi](movie.language) movies
+- find all [chinese](movie.language) language movies
+- find films in [german](movie.language)
+- find me [tamil](movie.language) movies
+- find movies in [british english](movie.language)
+- find movies in [french](movie.language)
+- find movies in [hindi](movie.language)
+- find movies in [italian](movie.language)
+- find movies in [spanish](movie.language)
+- find movies in [spanish](movie.language)
+- find movies in [french](movie.language)
+- get [german](movie.language) language films
+- get all [italian](movie.language) language movies
+- get me [spanish](movie.language) movies
+- please find a movie in [mandarin](movie.language)
+- please make a list of movies that have been made in [spanish](movie.language)
+- search for [spanish](movie.language) movies
+- search for [spanish](movie.language) movies
+- search for movies in [french](movie.language)
+- search for movies in [french](movie.language)
+- search for movies in [italian](movie.language)
+- search for movies in [spanish](movie.language)
+- send me movies that are in [chinese](movie.language)
+- send me movies that are in [italian](movie.language)
+- send me movies that are in [spanish](movie.language)
+- look up movies in [chinese](movie.language)
+
+- find [pg thirteen](rating.name) movies
+- [pg](rating.name) movies list please
+- are there any movies that are rated [r](rating.name)
+- bring up all [pg](rating.name) movies
+- compile a list of movies with a [r](rating.name) rating
+- can you get me a [pg](rating.name) movie list
+- do you have any [pg thirteen](rating.name) rated movies
+- find a [pg-13](rating.name) movie
+- find a [pg](rating.name) rated movie
+- find me [nc-17](rating.name) movies
+- find me [pg-13](rating.name) movies
+- find me [pg](rating.name) movies
+- find me movies rated [g](rating.name)
+- find me movies rated [g](rating.name)
+- find movies only [g](rating.name)
+- find movies rated [pg](rating.name)
+- find movies that are [pg](rating.name)
+- find movies that are rated [g](rating.name)
+- find movies that are rated [pg-13](rating.name)
+- find movies with [g](rating.name) rating
+- find movies with [pg-13](rating.name) only
+- find movies with [pg](rating.name) ratings only
+- find movies with [r](rating.name) ratings
+- find movies with a [nc 17](rating.name) only
+- find rated [pg](rating.name) movies
+- find rated [r](rating.name) movies
+- list [g](rating.name)
+- give me a list of [r](rating.name) rated movies
+- only movies rated [g](rating.name)
+- please find [pg](rating.name) rated movies
+- please look up [r](rating.name) rated movies
+- please select the option to search for [g](rating.name) rated movies
+- search for [r](rating.name) rated movies
+- search for movies rated [g](rating.name)
+- search for movies with a [pg](rating.name) rating
+- search for movies with a [pg](rating.name) rating
+- list all movies rated [pg-13](rating.name)
+- list all rated [r](rating.name) movies
+- list movies rated [g](rating.name)
+- list movies rated [pg](rating.name)
+- list of [g](rating.name) movies
+- list rating [g](rating.name)
+- listing of [g](rating.name) movies
+- look for movies rated [g](rating.name)
+- look up [r](rating.name) rated movies
+- look up movies with a [g](rating.name) rating
+- i want to search for [pg](rating.name) rated movies
+
+- find movies released in [september](movie.release_date)
+- where can i find information about movies released [nine fourteen twenty twelve](movie.release_date)
+- get a list of movies released in [september](movie.release_date)
+- search [nineteen ninety](movie.release_date) 's movies
+- search [twenty twelve](movie.release_date) movies
+- search for [eighties](movie.release_date) movies
+
+- can you find me only movies that grossed [three million or more](movie.revenue)
+
+## intent:request/movie/visual
+- can you show me a movie with [brad pitt](actor.name)
+- can you show me movies starring [denzel washington](actor.name) please
+- please show me movies starring [denzel washington](actor.name)
+- show me a list of movies that [christian bale](actor.name) has starred in during his career
+- show me a movie that starred [patrick swayze](actor.name)
+- show me all movies [hillary duff](actor.name) has been in
+- show me all movies [kristen stewart](actor.name) has been in
+- show me all movies [tom cruise](actor.name) has been in
+- show me all movies that star [ed harris](actor.name)
+
+- show all movies directed by [martin scorsese](director.name)
+- show all movies directed by [ron howard](director.name)
+- show all movies directed by [woody allen](director.name)
+- show director [clint eastwood](director.name) movies
+- can you show me a list of all the movies directed by [james cameron](director.name)
+- show me a list of all movies that were directed by [tom hanks](director.name)
+- show me a list of all the movies directed by [james cameron](director.name)
+- show me a list of movies directed by [mel gibson](director.name)
+- show me a list of movies directed by [robert wise](director.name)
+- show me all [brad pitt](director.name) directed movies
+
+- can you show movies produced by [clint eastwood](producer.name)
+- i want to see a [robert redford](producer.name) produced movie
+- show me a list of all the movies produced by [william packer](producer.name)
+- show me all movies produced by [ray stark](producer.name)
+
+- display movies made by production [lionsgate](producer.org)
+- display the films by [7 arts](producer.org)
+- show me information about movies from [liongate](producer.org)
+- i need to see some movies from [warner brothers](producer.org)
+- see [miramax](producer.org) movies
+- show all movies by [paramount](producer.org)
+- show me [pixar](producer.org) films
+- show me a list of [disney](producer.org) movies
+- show me a list of all [warner bros](producer.org) films
+- show me a list of movies produced by [mgm](producer.org)
+- show me all films produced by [warner bros](producer.org)
+
+- display movies made in [germany](country.name)
+- see movies from [india](country.name)
+- see movies from [spain](country.name)
+- please show me movies made in [france](country.name)
+- show me [england](country.name) movies
+- show me a list of all movies made in [the united states](country.name)
+- show me a list of movies made in [america](country.name)
+- show me a list of any movies made in [canada](country.name)
+
+- show [german](country.adj) movies
+- can you show me a [korean](country.adj) movie
+- show me [canadian](country.adj) films
+- show me [canadian](country.adj) movies
+- show me [british](country.adj) films
+- show me [chinese](country.adj) movies
+- show me [french](country.adj) movies
+- show me [hungarian](country.adj)
+- show me [italian](country.adj) movies
+- show me [japanese](country.adj) movies
+- show me [korean](country.adj) movies
+- show me [mexican](country.adj) films
+- show me a list of some [japanese](country.adj) movies
+
+- can you show me a list of movies in [spanish](movie.language)
+- can you show me [spanish](movie.language) movies
+- can you show me movies [spanish](movie.language)
+- display movies in [german](movie.language)
+- see movies in [punjabi](movie.language)
+- show me [english](movie.language) movies
+- show me [korean](movie.language) language movie
+- show me [spanish](movie.language) movies
+- show me a list of movies in [english](movie.language)
+
+- can you show me a list of [scary](movie.genre) movies
+- see [comedy](movie.genre)
+- show me [comedies](movie.genre)
+- show me [comedy](movie.genre) movies
+- show me [funny](movie.genre) movies
+- show me [horror](movie.genre) movies
+- show me [mystery](movie.genre) movies
+- show me [scifi fantasy](movie.genre) movies
+- show me [thrillers](movie.genre)
+- show me [thrillers](movie.genre)
+- show me [westerns](movie.genre)
+- show me a list of [musicals](movie.genre)
+- show me a list of [scary](movie.genre) movies
+
+- can you show me movies about [war](movie.subject)
+- display [french culture](movie.subject) films
+- display movies concerning [france](movie.subject)
+- display movies of [zombies](movie.subject)
+- display movies on [gardening](movie.subject)
+- see [zombie](movie.subject) movies
+- please show me movies about [ice skating](movie.subject)
+- show [zombie](movie.subject) movies
+- show [classic car](movie.subject) movies
+- show all movies about [britain](movie.subject)
+- show me [diving](movie.subject) movies
+- show me [time travel](movie.subject) movies
+- show me [zombie](movie.subject) movies
+- show me [zombie](movie.subject) movies
+- show me a list of some movies on [religious issues](movie.subject)
+- show me all movies about [diving](movie.subject)
+
+- show me movies with a [four](movie.stars) star rating
+
+- only show movies rated [pg](rating.name)
+- show me [g](rating.name) movies
+- show me [g](rating.name) rated movies
+- show me [nc seventeen](rating.name) movies
+- show me [pg thirteen](rating.name) movies
+- show me [pg](rating.name) movies
+- show me [pg](rating.name) rated movies
+- show me [r](rating.name) movies
+- show me [r](rating.name) rated movies
+- show me a list of movies with [r](rating.name) rating
+- show me all [pg](rating.name) movies
+- show me all [r-rated](rating.name) movies
+
+- show me the movies released in [america](movie.release_region)
+- show me the movies released in [london](movie.release_region)
+- show me the movies released in [srilanka](movie.release_region)
+
+- i 'd like to see a movie that was filmed in [africa](movie.filming_location)

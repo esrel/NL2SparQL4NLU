@@ -1,0 +1,363 @@
+## intent:list/movie.credits
+- show me movie credits
+- show credits [forager](movie.name)
+
+## intent:list/movie.crew+actor
+- cast and crew for [in july](movie.name)
+- search for information about the cast and crew of [appolo thirteen](movie.name)
+- i would like to know more about the cast and crew of the movie [apollo thirteen](movie.name)
+- who are cast and crew of [dirty dancing](movie.name)
+- look up information about the cast crew of [go](movie.name)
+- find information about the cast and crew of [go](movie.name)
+- cast and crew of [house at the end of the street](movie.name)
+
+## intent:list/movie.crew.name
+- searching for names of crew members of [appollo thirteen](movie.name)
+
+
+## intent:find/actor
+- who played the [voice](character.attr) of [nemo](character.name) in [finding nemo](movie.name)
+- who played [richie cunningham](character.name) in [happy days](movie.name)
+- [ethel](character.name) [actress](mod:actor.gender:female) from [i love lucy](movie.name)
+- [actress](mod:actor.gender:female) who played [ethel](character.name) on [i love lucy](movie.name)
+- who played [hawkeye](character.name) in [mash](movie.name)
+- who played [mother](character.role) in [tarkovsky](director.name) 's [mirror](movie.name)
+- which actor played [frodo](character.name) in [lord of the rings](movie.name)
+
+## intent:list/actor
+- find movie actors
+- [star](mod:actor.type:star) of [thor](movie.name)
+- actor from [lost](movie.name)
+- actor from [lassie](movie.name)
+- [star](mod:actor.type:star) of [facts of life](movie.name)
+- [star](mod:actor.type:star) of [modern family](movie.name)
+- who is in the movie [the campaign](movie.name)
+- who was in [twilight](movie.name)
+- who is in [vulguria](movie.name)
+- who played in the movie [rocky](movie.name)
+- who played in the movie [captain america](movie.name)
+- who is in movie [in july](movie.name)
+- can you find the [lead](mod:actor.type:lead) actor in [pretty women](movie.name)
+- who 's in [star wars episode four](movie.name)
+- who was in [apollo thirteen](movie.name)
+- who [starred](mod:actor.type:star) in [the avengers](movie.name)
+- who was in [hitch](movie.name)
+- who is in the cast of [hitch](movie.name)
+- who [stars](mod:actor.type:star) in [house at the end of the street](movie.name)
+- show me the actor of the movie [muthyala muggu](movie.name)
+- who are the [droids](character.role) in [star wars episode four](movie.name)
+- who was that [guy](mod:actor.gender:male) again who was in [the avengers](movie.name)
+- find the [male](mod:actor.gender:male) actor from [grand torino](movie.name)
+- who played the [female](mod:actor.gender:female) [lead](mod:actor.type:star) in [hitch](movie.name)
+- find the [female](mod:actor.gender:female) [actress](mod:actor.gender:female) from [shallow hal](movie.name)
+- who are the [lead](mod:actor.type:lead) actors
+- list the cast of the movie [the campaign](movie.name)
+- who was [apollo thirteen](movie.name) 's cast
+- [dirty dancing](movie.name) actors
+- list actors in the movie [midnight cowboy](movie.name)
+- cast for [finding nemo](movie.name)
+- who was in the cast of [go](movie.name)
+- show me the cast for the [house at the end of the street](movie.name)
+- who are the cast members in [lord of the rings the two towers](movie.name)
+
+## intent:name/actor
+- give me the name of the [main](mod:actor.type:lead) [actress](mod:actor.gender:female) in [platoon](movie.name)
+- name the [co-star](mod:actor.type:star) in [shoot to kill](movie.name)
+
+## intent:find/actor.name
+- find the name of the [actress](mod:actor.gender:female) who played [mother](character.relation) in [mirror](movie.name) by [andrey tarkovsky](director.name)
+- what is the name of the [actress](mod:actor.gender:female) who played [mother](character.relation) in [tarkovsky](director.name) 's [mirror](movie.name)
+- what is the name of the actor who played [todd](character.name) in the [tv show](movie.type) [one life to live](movie.name)
+- what 's the name of the [mom](character.relation) on [seinfeld](movie.name)
+- what is the name of the actor who played [atticus finch](character.name) in [to kill a mockingbird](movie.name)
+- show me the name of the [guy](mod:actor.gender:male) who was the [father](character.relation) and a [lawyer](character.occupation) in [to kill a mockingbird](movie.name)
+
+## intent:show/movie
+- about [life is beautiful](movie.name)
+- show me info on [life is beautiful](movie.name)
+- [feral](movie.name)
+- the movie is called [big](movie.name)
+- exhibit all details of [original](mod:movie.release_date:sort:asc) [finding nemo](movie.name) movie
+- [finding nemo](movie.name) movie
+- find the movie [finding nemo](movie.name)
+- i am looking for information on the movie [finding nemo](movie.name)
+- show me details for the movie [finding nemo](movie.name)
+- tell me in detail about the movie [dirty dancing](movie.name)
+- look for [dirty dancing](movie.name) movie with [jennifer grey](actor.name)
+- tell about movie [dirty dancing](movie.name)
+- [dirty dancing](movie.name) info
+- [dirty dancing](movie.name)
+- give a short bio for [dirty dancing](movie.name)
+- about [dirty dancing](movie.name)
+- [cars](movie.name) movie
+- [the camp](movie.name)
+- watch [sandra bullock](actor.name) [the blind side](movie.name)
+- give me information about [finding nemo](movie.name)
+- i want information about [finding nemo](movie.name)
+- show me [finding nemo](movie.name)
+- [finding nemo](movie.name) [bing](ne:other)
+- search [finding nemo](movie.name)
+- show information page for [finding nemo](movie.name)
+- [the campaign](movie.name) information
+- more information on [apallo thirteen](movie.name)
+- research [apollo thirteen](movie.name)
+- look up [star wars four](movie.name) movie
+- display all details about [star wars a new hope](movie.name) movie
+- get all details about [star wars a new hope](movie.name) movie
+- [star wars episode four](movie.name)
+- i want [star wars four](movie.name) main page
+- search [star wars four](movie.name)
+- find me tons of info related to [star wars four](movie.name)
+- get details of [in july](movie.name) movie
+- find details of [in july](movie.name) movie
+- show details of [in july](movie.name) movie
+- tell me about [in july](movie.name) movie
+- look up the movie [in july](movie.name)
+- display information for the movie title [in july](movie.name)
+- movie [in july](movie.name) data
+- i need info on [house at the end of the street](movie.name)
+- what is the [houses at the end of the street](movie.name) about
+- give me more facts about the movie [house at the end of the street](movie.name) in detail
+- i would like to know in detail about the movie [house at the end of the street](movie.name)
+- display movie information for the film [house at the end of the street](movie.name)
+
+## intent:list/movie
+- find movies
+- find [old](mod:movie.release_date:sort:asc) movies
+- find [newly](movie.release_date:sort:des) released movies in [spanish](movie.language)
+- find movies about [dancing](movie.subject)
+- search for movies about [dancing](movie.subject)
+- show [will ferrell](actor.name) films
+- [will ferrell](actor.name) movies
+- what movies has [will ferrell](actor.name) appeared in
+- find [russian](movie.origin.country.adj) movies
+- [will smith](actor.name) acting career
+- search for [tim burton](director.name) movies in [french](movie.language)
+- what did [andrew stanton](director.name) direct
+- show me some [other](mod:alternative) movies directed by [andrew stanton](director.name)
+- display [albert brooks](actor.name) movie
+- show a movie with [albert brooks](actor.name) in the cast
+- what [other](mod:alternative) films has [sergio leone](director.name) directed
+- what movies has [george harrison](producer.name) produced
+- what has [charlie sheen](actor.name) [starred](mod:actor.type:star) in
+- please find the movies in which [clive owen](actor.name) has appeared
+- in which movies has [clive owen](actor.name) appear
+- [spike lee](director.name) directed what movie
+- search for movies directed by [spike lee](director.name)
+- please list all movies [not](neg:rating.name) rated [pg](rating.name)
+- i want a list of [english](movie.language) speaking movies
+- a list of movies made in [america](movie.origin.country.name)
+- are there any movies produced in [the united states](movie.origin.country.name)
+- show [english](movie.origin.country.adj) movies
+- search [english](movie.origin.country.adj) movies
+- [comedy](movie.genre)
+- find a [comedy](movie.genre)
+- watch [comedy](movie.genre) movies
+- get [horror](movie.genre) films
+- show me [horror](movie.genre) movies
+- i want to see a listing of [horror](movie.genre) movies
+- show actor [bruce willis](actor.name) movies
+- which movies did [bruce willis](actor.name) [star](mod:actor.type:star) in
+- list movies with [bruce willis](actor.name)
+- show me movies made in [canada](movie.origin.country.name)
+- can i watch a [canadian](movie.origin.country.adj) film
+- see [canadian](movie.origin.country.adj) movies
+- search for information about [canadian](movie.origin.country.adj) movies
+- I 'd like to see some [italian](movie.origin.country.adj) films
+- show me something [italian](movie.origin.country.adj) made
+- i want to see a movie from [spain](movie.origin.country.name)
+- find movies from [spain](movie.origin.country.name)
+- [spain](movie.origin.country.name) country movies
+- display a list of [spanish](movie.origin.country.name) films
+- [spanish](movie.origin.country.name) movie listing
+- [spanish](movie.origin.country.name) movies
+- find some [romantic](movie.genre) movies
+- i want to see a movie in [french](movie.language)
+- [gwyneth paltrow](actor.name) movies
+- find movies with [quentin tarantino](director.name) as director
+- [england](movie.origin.country.name) movies
+- [england](movie.origin.country.name) movies please
+- find [david tennant](actor.name) movies
+- show me what [richard lester](director.name) directed
+- get films in [hindi](movie.language)
+- show me movies from [india](movie.origin.country.name)
+- what is a [british](movie.origin.country.adj) [horror](movie.genre) movie
+- i want to watch an [r](rating.name) rated [comedy](movie.genre)
+- list of [french](movie.language) language
+- can i see a list of [bette midler](actor.name) movies
+- list of movies [starring](mod:actor.type:star) [bette midler](actor.name)
+- show me all of [anne hathaway](actor.name) 's movies
+- what movies has [sandra bullock](producer.name) produced
+- find me movies from [portugal](movie.origin.country.name)
+- what movies has [robert redford](actor.name) been in
+- movies from [japan](movie.origin.country.name)
+- show movies from [japan](movie.origin.country.name)
+- list [japanese](movie.origin.country.adj) movies
+- show me [japanese](movie.origin.country.adj) movies
+- give me a list of some [japanese](movie.origin.country.adj) movies
+- give me a list of [japanese](movie.origin.country.adj) movies
+- [japanese](movie.origin.country.adj) movies
+- show me [japanese](movie.language) language movies
+- which films are spoken in [japanese](movie.language)
+- [miramax films](producer.org) only
+- show movies by [miramax](producer.org)
+- search [sandra bullock](actor.name) movies
+- watch [sandra bullock](actor.name) movies
+- find movies about [vampires](movie.subject)
+- find movies having [vampires](movie.subject)
+- [will smith](actor.name) movies
+- what movies did [darla anderson](producer.name) produce
+- what films are made by [paramount](producer.org)
+- show me movies by [paramount](producer.org)
+- what movies has [paramount](producer.org) released
+- show all movies from [turkey](movie.origin.country.name)
+- show me movies produced by [bruce lee](producer.name)
+- i want to see an [kevin james](actor.name) film tonight
+- find films from [china](movie.origin.country.name)
+- get films from [china](movie.origin.country.name)
+- i 'd like to watch a movie made in [china](movie.origin.country.name)
+- list some movies from [china](movie.origin.country.name)
+- [chinese](movie.origin.country.adj) films
+- show me [other](mod:alternative) [chinese](movie.origin.country.adj) movies
+- show me [chinese](movie.origin.country.adj) movies
+- what movies have a [pg-13](rating.name) rating
+- please list movies that are rated [pg-13](rating.name)
+- i need a [g](rating.name) rating so i can take the [kids](mod:movie.audience:family)
+- find a [g](rating.name) rated movie
+- find [g](rating.name) movies
+- find [g](rating.name) movies
+- i want rated [g](rating.name) movies
+- look up [g](rating.name) rated movies
+- i am searching for any [g](rating.name) rated movies for my [children](mod:movie.audience:family) to view
+- rated [g](rating.name) movies for [family](mod:movie.audience:family) watching
+- find [g](rating.name) rated movies
+- are there any movies rated [g](rating.name) playing
+- i want to see movies rated [g](rating.name)
+- find movies rated [g](rating.name)
+- show me movies with [g](rating.name) rating
+- did [robert wise](director.name) direct any [other](mod:alternative) [musicals](movie.genre)
+- [bruce lee](producer.name) produced movie listing
+- what was the [last](mod:sort:des) movie made by [robert wise](director.name)
+- find movies produced by [mgm](producer.org)
+- show me [british](movie.origin.country.adj) made movies
+- movies from [the uk](movie.origin.country.name)
+- find me movies from [the uk](movie.origin.country.name)
+- can you list [ron howard](producer.name) movie production
+- i need to know the movies produce by [ron howard](producer.name)
+- did [clint eastwood](director.name) direct any [other](mod:alternative) movies besides [million dollar baby](movie.name)
+- find movies directed by [clint eastwood](director.name)
+- what movies have been directed by [clint eastwood](director.name)
+- list all movies that were directed by [clint eastwood](director.name)
+- what movies has [clint eastwood](director.name) directed
+- show movies directed by [clint eastwood](director.name)
+- find all films by [stanley kubrick](director.name)
+- i want to select the option to search for movies produced by [stephen spielberg](producer.name)
+- i would like to search for movies produced by [stephen speilberg](producer.name)
+- show me [japanese](movie.origin.country.adj) [horror](movie.genre) movies
+- i would like to see movies [ron howard](director.name) directed
+- movies by [stephen](director.name)
+- movies by [stephen](director.name)
+- what movies did [stephen spielberg](director.name) direct
+- list [steven spielberg](director.name) movies
+- [steven spielberg](director.name) movie
+- [steven spielberg](director.name) movies please
+- directed by [steven spielberg](director.name)
+- find the [steven spielberg](director.name) movies
+- find movies from [steven spielberg](director.name)
+- i would like to watch a movie directed by [eddie murphy](director.name)
+- i want to see movies with [hugh jackman](actor.name)
+- list movies with [kevin spacey](actor.name)
+- look for movies from [france](movie.origin.country.name)
+- can you show me movies that were made in [france](movie.origin.country.name)
+- find me any movies that were made in [france](movie.origin.country.name)
+- [french](movie.origin.country.adj) movies please
+- [french](movie.origin.country.adj) movies
+- find movies produced by [mosfilm](producer.org)
+- what was [kristen stewart](actor.name) 's [first](mod:sort:asc) movie
+- get me movies directed by [miranda july](director.name)
+- [tom hanks](actor.name) movies
+- show me movies with [tom hanks](actor.name)
+- i am trying to find a list of movies with [tom hanks](actor.name)
+- provide movies directed by [oliver stone](director.name) please
+- i want to look for movies produced by [albert ruddy](producer.name)
+- what are all of the movies produced by [albert ruddy](producer.name)
+- movies produced by [yash chopra](producer.name)
+- what did [brad pitt](producer.name) porduce
+- bring up all [brad pitt](producer.name) produced movies
+- show all movies that [penny marshall](director.name) directed
+- i need a list of all the movies directed by [james cameron](director.name)
+- give me a list of all the movies directed by [james cameron](director.name)
+- [james cameron](producer.name) movies produced
+- movies produced by [james cameron](producer.name)
+- what films have been produced by [warner bros](producer.org)
+- find movies produced by [warner bros](producer.org)
+- what movies have been produced by [warner bros](producer.org)
+- show me movies by [wb](producer.org)
+- has [kristen stewart](actor.name) [starred](mod:actor.type:star) in movies [other](mod:alternative) than [twilight](movie.name)
+- show me [kristen stewart](actor.name) movies
+- what movies has [kristen stewarted](actor.name) [starred](mod:actor.type:star) in
+- [lionsgate](producer.org) movies
+- show [lionsgate](producer.org) movies
+- show movies made by production [lionsgate](producer.org)
+- give me something by [charles vidor](director.name)
+- show [charles vidor](director.name) movie
+- what film did [charles vidor](director.name) direct
+- which movies have been made [outside](neg:movie.origin) [the united states](movie.origin.country.name)
+- find me [nigeria](movie.origin.country.name) movies
+- display [7 arts](producer.org) movies
+- [korean](movie.origin.country.adj) movie
+- what [other](mod:alternative) movies did [roberto benigni](actor.name) [star](mod:actor.type:star) in
+- i want to see movies [starring](mod:actor.type:star) [denzel washington](actor.name) please
+- list the [kareena](actor.name) 's movie
+- i want to watch a [drama](movie.genre) made in [turkey](movie.origin.country.name)
+- [jennifer lopez](actor.name) played in what movies
+- show me all of the movies directed by [woody allen](director.name)
+- show [robert wise](director.name) movies
+- want to see [robert wise](director.name) movies
+- what movies has [robert wise](director.name) directed
+- what movies have [robert wise](director.name) directed
+- where can i find a list of movies produced by [chris nolan](producer.name)
+- what movies has [brad pitt](actor.name) been in
+- what are the movies [brad pitt](actor.name) had been in
+- what are some movies with [brad pitt](actor.name)
+- find an [r](rating.name) rated movie
+- show me [r](rating.name) rated movies
+- give me a list of [r](rating.name) rated movies
+- look up [r](rating.name) rated movies
+- i want only [r](rating.name) rated movies
+- i want to see a list of rated [r](rating.name) movies
+- show me only movies with a rating of [r](rating.name)
+- please look for movies with an [r](rating.name) rating
+- show me movies rated [r](rating.name)
+- look for movies with an [r](rating.name) rating
+- give me a list of all movies that are rated [r](rating.name)
+- list [dredd](movie.name) movie
+- i want to watch movies from [norway](movie.origin.country.name)
+- can i have a list of [spanish](movie.origin.country.adj) speaking movies
+- show me movies made in [mexico](movie.origin.country.name)
+- show me the movie [pot zombies](movie.name)
+- what movies have [zombies](movie.subject) in them
+- show me movies about [zombies](movie.subject)
+- show me movies about [zombies](movie.subject)
+- show me ones by [david fincher](director.name)
+- show [ridley scott](director.name) 's filmography
+- find [ridley scott](director.name) movies
+- can you show me movies directed by [ridley scott](director.name)
+- list [german](movie.origin.country.adj) movies
+- [german](movie.origin.country.adj) movies
+- find [action](movie.genre) films
+- find some [action](movie.genre) movies
+- show me [george lucas](director.name) movies
+- find movies directed by [george lucas](director.name)
+- please find movies produced by [morgan freeman](producer.name)
+- please look up movies produced by [morgan freeman](producer.name)
+- search for movies produced by [morgan freeman](producer.name)
+- find movies produced by [morgan freeman](producer.name)
+- look up movies produced by [morgan freeman](producer.name)
+- what movies has [meryl streep](actor.name) [starred](mod:actor.type:star) in
+
+
+
+
+
+

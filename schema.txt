@@ -1,0 +1,82 @@
+
+movie by director
+movie made by producer
+movie with actor
+
+
+
+entities:
+    -
+
+
+
+slot modifiers
+temporal:
+    date.(sort.ASC):slot
+    date.(sort.DESC):slot
+?
+    alt:slot
+
+
+
+negation (neg)
+    neg:slot
+
+named entities (ne)
+    ne.org
+
+
+
+
+- movie
+    - name
+    - language
+    - release_date
+    - release_region
+    - budget
+    - actor: actor
+    - director: director
+    - producer: producer
+    - country: country
+
+# credit grouping
+- credits
+    - cast - actors
+    - crew - technical
+    - producers
+    - directors
+    - screenwriters
+
+- actor role types
+    - lead (main, best) n
+    - star (main)       n
+    - other             n
+
+
+
+relations:
+    actor(movie, person)
+    role(movie, character, person)
+
+
+
+
+
+
+# Intent Annotation
+Intent is a combination of <action>/<entity>.<attribute>
+
+## actions
+- show  | query returns results as an item
+- list  | query returns results as a list of items
+- count | query returns results as a length of a list
+
+## required slots
+- actor
+- movie
+
+
+
+
+- required slot attributes
+    - name
